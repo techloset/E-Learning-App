@@ -1,0 +1,11 @@
+.vertical-div {
+    writing-mode: vertical-rl; /* Sets vertical writing mode */
+    text-orientation: upright; 
+    white-space: nowrap; 
+    transform: matrix(0.98, -0.17, 0.17, 0.98, 0, 0);
+  }
+
+  .book{
+    transform: rotate(80deg);
+  }
+  

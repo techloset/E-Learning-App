@@ -1,0 +1,12 @@
+.bg{
+    background-image: url("../../images/computer.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.bg-image{
+    background-image: url("../../images/search.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* height: 326px; */
+}
