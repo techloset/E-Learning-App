@@ -8,6 +8,7 @@ import ui from "../../images/ui.png"
 import Rectangle from "../../images/Rectangle.png"
 import js from "../../images/js.png"
 import call1 from "../../images/call1.png"
+import picture from "../../images/news_big_picrure.png"
 
 
 const Latest = () => {
@@ -19,7 +20,7 @@ const Latest = () => {
 
     
     const [card,setCard] = useState({
-        image:"http://localhost:3000/static/media/news_big_picrure.af412a83ab12d3a41f54.png",
+        image:picture,
         buttonText: 'NEWS',
         title:"Class adds $30 million to its balance sheet for a Zoom-friendly edtech solution",
         description:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...",
@@ -131,13 +132,13 @@ const Latest = () => {
             
         <div className=' grid gap-y-6 '>
            <Card
-                image="http://localhost:3000/static/media/tablet.d5325133f469bde7ddaa.png"
+                image={tablet}
                 buttonText= 'PRESS RELEASE'
                 title="Class Technologies Inc. Closes $30 Million Series A Financing to Meet High "
                 description="Class Technologies Inc., the company that created class..."
                onClick={()=>{
                 diplayCard(
-                    "http://localhost:3000/static/media/tablet.d5325133f469bde7ddaa.png",
+                  `${tablet}`,
                    " PRESS RELEASE",
                    "Class Technologies Inc. Closes $30 Million Series A Financing to Meet High Demand ",
                    "Class Technologies Inc., the company that created Class is this "
@@ -150,13 +151,13 @@ const Latest = () => {
 
 
 <Card
-                image="http://localhost:3000/static/media/tablet.d5325133f469bde7ddaa.png"
+                image={tablet}
                 buttonText= 'NEWS'
                 title="Zoom’s earliest investors are betting millions on a better Zoom for schools"
                 description="Zoom was never created to be a consumer product. Nonetheless..."
                onClick={()=>{
                 diplayCard(
-                    "http://localhost:3000/static/media/tablet.d5325133f469bde7ddaa.png",
+                  `${tablet}`,
                    " NEWS",
                    "Zoom’s earliest investors are betting millions on a better Zoom for schools",
                    "Zoom was never created to be a consumer product. Nonetheless, and given by that"
@@ -166,13 +167,13 @@ const Latest = () => {
                
 
       <Card
-                image="http://localhost:3000/static/media/tablet.d5325133f469bde7ddaa.png"
+                image={tablet}
                 buttonText= 'NEWS'
                 title="Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms"
                 description="This year, investors have reaped big financial returns from betting... "
                onClick={()=>{
                 diplayCard(
-                    "http://localhost:3000/static/media/tablet.d5325133f469bde7ddaa.png",
+                    `${tablet}`,
                    " NEWS",
                    "Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms",
                    "This year, investors have reaped big financial returns from betting on Zoom  "

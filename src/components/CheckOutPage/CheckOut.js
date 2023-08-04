@@ -7,7 +7,7 @@ import am from "../../images/am.png"
 import visa from "../../images/visa.png"
 const CheckOut = () => {
   return (
-    <div className=' mx-10 md:mx-28'>
+    <div className=' mx-10 md:mx-20'>
       <br /><br />
       <div className='flex 2xl:flex-row flex-col justify-between'>
 
