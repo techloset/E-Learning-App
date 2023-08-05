@@ -1,6 +1,7 @@
 import React from 'react'
 import { GreenNav } from '../CalenderOptions'
 import CalenderOptions from '../CalenderOptions'
+import { Sky } from '../CalenderOptions'
 
 const SmallCard =()=>{
     return(
@@ -99,19 +100,23 @@ d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.
 const CourseCalender2 = () => {
   return (
     <div>
-      <div className='flex bg-[#9DCCFF]  flex-col xl:flex-row'>
+      <div className='flex bg-[#9DCCFF] bg-opacity-20  flex-col xl:flex-row'>
         
-        <div className=' xl:w-[39%] '>
+        <div className=' xl:w-[39%] bg-white'>
                 <CalenderOptions/>
+                
+              
         </div>
                   
    
    <div className='xl:w-[70%] '>
     <GreenNav/>    
-        <div className='bg-[#9DCCFF] p-6'>
-            <p className='text-2xl  font-semibold'>Create new event</p>
+        <div className='bg-[#9DCCFF] bg-opacity-20 p-6'>
+            <p className='text-2xl  font-semibold'>Share and Refer</p>
             <br />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLorem</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLoremLorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem
+<br /> eiusmodLorem dolor sit amet, consectetur adipiscing</p>
+            {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLorem</p> */}
             <br /><br />
             {/* h-[1006px] */}
             <div className='bg-white rounded-xl p-6'>
@@ -119,19 +124,19 @@ const CourseCalender2 = () => {
 
                 <p>Lorem ipsum dolor sit amet, consectetur adi</p>
                 <br />
-                <div className='bg-[#9DCCFF] p-6 '>
+                <div className='bg-[#9DCCFF] bg-opacity-20 p-6 '>
                 Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodL
                 </div>
                 <br />
             </div>
 
             <br />
-            <div className='bg-white rounded-xl p-6'>
+            <div className='bg-white rounded-xl  p-6'>
                 <SmallCard/>
 
                 <p>Lorem ipsum dolor sit amet, consectetur adi</p>
                 <br />
-                <div className='bg-[#F48C06] p-6 '>
+                <div className='bg-[#F48C06] bg-opacity-20 p-6 '>
                 Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodL
                 </div>
                 <br />
@@ -144,7 +149,7 @@ const CourseCalender2 = () => {
 
                 <p>Lorem ipsum dolor sit amet, consectetur adi</p>
                 <br />
-                <div className='bg-[#EE645B] p-6 '>
+                <div className='bg-[#EE645B] bg-opacity-20 p-6 '>
                 Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodL
                 </div>
            

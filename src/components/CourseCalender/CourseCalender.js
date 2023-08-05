@@ -6,6 +6,9 @@ const CourseCalender = () => {
 
 
   const [currentDate, setCurrentDate] = useState(new Date());
+  // const [currentDate, setCurrentDate] = useState(new Date());
+  const [selectedDate, setSelectedDate] = useState(null);
+  const [selectedDay, setSelectedDay] = useState(null);
 
   const prevMonth = () => {
     setCurrentDate((prevDate) => {
@@ -33,29 +36,44 @@ const CourseCalender = () => {
   };
 
   const renderCalendar = () => {
+    
+
+
+
+    
     const daysInMonth = getDaysInMonth(currentDate);
-    const firstDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 2).getDay();
-    const blanks = [];
-    for (let i = 0; i < firstDayOfMonth; i++) {
-      blanks.push(<div key={`blank-${i}`} className="calendar-day empty"></div>);
-    }
+  const firstDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1).getDay(); // Fix day calculation
+  const blanks = [];
+  for (let i = 0; i < firstDayOfMonth; i++) {
+    blanks.push(<div key={`blank-${i}`} className="calendar-day empty"></div>);
+  }
 
-    const days = [];
-    for (let day = 1; day <= daysInMonth; day++) {
-      days.push(
-        <div key={`day-${day}`} className="calendar-day">
-          {day}
-        </div>
-      );
-    }
+  const days = [];
+  for (let day = 1; day <= daysInMonth; day++) {
+    days.push(
+      <div
+        key={`day-${day}`}
+        className={`calendar-day ${selectedDate === day ? 'selected' : ''}`}
+        onClick={() => setSelectedDate(day)} // Handle date selection
+      >
+        {day}
+      </div>
+    );
+  }
 
-    return [...blanks, ...days];
+  return [...blanks, ...days];
+
+
+  
   };
 
+  
+ 
+
   return (
-    <div className='flex xl:flex-row flex-col bg-[#9DCCFF] '>
+    <div className='flex xl:flex-row bg-opacity-20 flex-col bg-[#9DCCFF] '>
         
-        <div className=' xl:w-[39%] '>
+        <div className='bg-white xl:w-[39%] '>
                 <CalenderOptions/>
         </div>
 
@@ -63,7 +81,7 @@ const CourseCalender = () => {
    
    <div className='xl:w-[70%] '>
     <GreenNav/>   
-        <div className='bg-[#9DCCFF] p-6'>
+        <div className=' p-6'>
             <p className='text-2xl  font-semibold'>Share and refer</p>
             <br />
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLorem <br />Lorem ipsum dolor sit amet, consectetur adipiscing</p>
@@ -100,15 +118,18 @@ const CourseCalender = () => {
 {/* second section of the calender */}
  <div className="container mx-auto p-4">
       <div className=" items-center justify-between mb-4">
+        
         <div className='mx-auto text-center'>
-                 <h1 className="text-xl font-bold">{getMonthName(currentDate)}</h1>
-        </div>
+  <h1 className="text-xl font-bold">
+    {selectedDate ? `${selectedDate} ${getMonthName(currentDate)}` : getMonthName(currentDate)}
+  </h1>
+</div>
  
        <div className='flex justify-between '>
         <p className='mr-4 font-semibold '>2PM</p>
         <hr className='border mt-3 bg-[#696984] w-full h-[0.3px] text-[#696984] ' />
        </div>
-       <div className='bg-[#edafab] px-5 py-4 xl:w-56 w-48 sm:text-base text-sm   md:w-3/4  mx-12 rounded-xl font-semibold text-[#EE645B]'>
+       <div className='bg-[#EE645B4D] px-5 py-4 xl:w-56 w-48 sm:text-base text-sm   md:w-3/4  mx-12 rounded-xl font-semibold text-[#EE645B]'>
         Adobe XD Live Class
        </div>
        <div className='flex justify-between '>

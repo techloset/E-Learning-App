@@ -299,7 +299,7 @@ const Membership = () => {
     </div>
     <br />
     {/* =====================================================================what our students have to say ================================================================================ */}
-    <div className='bg-[#9DCCFF] relative'>
+    <div className='bg-[#9DCCFF] bg-opacity-20 relative'>
         <br /> <br /> <br />
         <div className='mx-10 lg:mx-16 xl:mx-20 '>
             <h1 className='font-bold text-2xl'>What our students have to say</h1>

@@ -83,7 +83,7 @@ const CheckOut = () => {
 
 
         {/* ===============summary========================== */}
-        <div className='bg-[#9DCCFF] p-5 2xl:max-w-xl 2xl:h-[636px] mt-10 2xl:mt-0  rounded-2xl'>
+        <div className='bg-[#9DCCFF] bg-opacity-20 p-5 2xl:max-w-xl 2xl:h-[636px] mt-10 2xl:mt-0  rounded-2xl'>
           <h1 className='text-2xl'>Summary</h1>
           <br /><br />
           <div className='flex flex-col md:flex-row mx-2 '>

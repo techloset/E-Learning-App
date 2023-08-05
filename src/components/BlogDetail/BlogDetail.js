@@ -144,7 +144,7 @@ TOTC is a platform that allows educators to create online classes whereby they c
 
        {/* =================================related blog================================== */}
 
- <div className='bg-[#9DCCFF]  ' style={{fontFamily:"poppins"}}>
+ <div className='bg-[#9DCCFF] bg-opacity-20 ' style={{fontFamily:"poppins"}}>
         <br /> <br />
         <div className='lg:mx-20 md:mx-14 mx-8 xl:mx-28'>
             <div className='flex justify-between'>

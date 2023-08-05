@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 
 const MeetingPage = () => {
   return (
-    <div className='bg-[#9DCCFF] p-8 flex xl:flex-row flex-col  font-poppins'>
+    <div className='bg-[#9DCCFF] bg-opacity-20 p-8 flex xl:flex-row flex-col  font-poppins'>
     
         {/* =====================ist section===================== */}
         <div className='xl:w-[70%] xl:mr-10 mt-8 ' >
@@ -41,7 +41,7 @@ const MeetingPage = () => {
             
         </div>
       {/* ======================course contentss========================== */}
-      <div className='xl:w-[30%] bg-[#9DCCFF]  mt-8'>
+      <div className='xl:w-[30%] mt-8'>
       <div className=' bg-[white]  rounded-2xl p-5'>
            <p className='text-3xl font-bold'>Course Contents</p>
             <div className='flex justify-between mt-1'>

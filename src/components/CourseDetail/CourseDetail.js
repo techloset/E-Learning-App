@@ -43,7 +43,7 @@ const CourseDetail = () => {
             <div className='xl:w-[55%] '>
 
                 <div className='flex md:flex-row flex-col justify-between'>
-                    <button className=' bg-[#0000001A] px-5 lg:px-8 py-3   rounded-xl'>Overview</button>
+                    <button className=' bg-[#0000001A] px-5 lg:px-8 py-3  mt-3 rounded-xl'>Overview</button>
                     <button className=' bg-[#0000001A] px-5 lg:px-8 py-3  mt-3 rounded-xl'>Overview</button>
                     <button className=' bg-[#0000001A] px-5 lg:px-8 py-3  mt-3 rounded-xl'>Overview</button>
                     <button className=' bg-[#49BBBD] px-5 lg:px-8 py-3  mt-3 text-white rounded-xl'>Overview</button>
@@ -208,14 +208,18 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
                <br />
                 <div className='flex justify-between'>
                     <p className='font-semibold text-2xl md:text-[45px] '>$49.65</p>
-                    <del className='font-semibold text-xl md:text-[28px] md:mt-3 opacity-50 '>S99.99</del>
-                    <p  className='font-semibold text-xl md:text-[28px] md:mt-3 opacity-50  ' >50% Off</p>
+                    <del className='font-semibold text-xl  md:text-[28px]  opacity-50 '>S99.99</del>
+                    <p  className='font-semibold text-xl md:text-[28px] opacity-50  ' >50% Off</p>
                 </div>
+                <br />
                 <p className='text-center  text-[#49BBBD] text-xl font-semibold'> 11 hour left at this price</p>
                 <br />
                 <button className='bg-[#49BBBD] w-full text-white text-center py-3  text-[20px]  font-semibold rounded-2xl'>Buy Now</button>
                 <br /> <br />
-                <hr  className='h-1 bg-gray-600'/>
+                {/* <hr  className='h-[4px] bg-[#696984'/> */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="442" height="1" viewBox="0 0 442 1" fill="none">
+  <path d="M0 0.5H442" stroke="#696984"/>
+</svg>
                 <br />
                 <p className='text-xl md:text-3xl font-semibold'>This Course included</p>
                 <br />
@@ -265,13 +269,19 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
                
 
                 </div>
-                <hr  className='h-1 bg-gray-600'/>
+                {/* <hr  className='h-1 bg-gray-600'/> */}
+                <svg xmlns="http://www.w3.org/2000/svg" width="442" height="1" viewBox="0 0 442 1" fill="none">
+  <path d="M0 0.5H442" stroke="#696984"/>
+</svg>
                <br />
                <p className='text-xl md:text-3xl font-semibold'>Training 5 or more people</p>
                <br />
                <p className='opacity-50'>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
                <br />
-               <hr  className='h-1 bg-gray-600'/>
+               {/* <hr  className='h-1 bg-gray-600'/> */}
+               <svg xmlns="http://www.w3.org/2000/svg" width="442" height="1" viewBox="0 0 442 1" fill="none">
+  <path d="M0 0.5H442" stroke="#696984"/>
+</svg>
 <br />
 
 <p className='text-xl md:text-3xl font-semibold '>Share this course</p>
@@ -283,7 +293,7 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
   type="button"
   data-te-ripple-init
   data-te-ripple-color="light"
-  className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white bg-black shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+  className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white bg-[#696984] shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
  <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-4 w-4"
@@ -299,7 +309,7 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
   type="button"
   data-te-ripple-init
   data-te-ripple-color="light"
-  className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white bg-black shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+  className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white bg-[#696984] shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-4 w-4"
@@ -330,7 +340,7 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
   type="button"
   data-te-ripple-init
   data-te-ripple-color="light"
-  className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white bg-black shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+  className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white bg-[#696984] shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
   <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-4 w-4"
@@ -345,7 +355,7 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
   type="button"
   data-te-ripple-init
   data-te-ripple-color="light"
-  className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white bg-black shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+  className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white bg-[#696984] shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
  <svg
     className="h-4 w-4"
     fill="currentColor"
@@ -363,7 +373,7 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
   type="button"
   data-te-ripple-init
   data-te-ripple-color="light"
-  className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white bg-black shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
+  className="mb-2 inline-block rounded-full p-3 text-xs font-medium uppercase leading-normal text-white bg-[#696984] shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg">
  <svg
     xmlns="http://www.w3.org/2000/svg"
     className="h-4 w-4"
@@ -382,7 +392,7 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
                 </div>
        </div>
        <br /><br /><br />
-       <div className='bg-[#9DCCFF] '>
+       <div className='bg-[#9DCCFF]  bg-opacity-20'>
         <br /><br /><br />
         <div className='flex justify-between mx-10 md:mx-28'>
             <div className='font-medium text-xl md:text-3xl '>Marketing Articles</div>

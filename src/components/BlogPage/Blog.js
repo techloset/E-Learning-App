@@ -113,7 +113,7 @@ const Blog = () => {
    
   return (
     <div>
-        <div className=' bg-[#9DCCFF]' >
+        <div className=' bg-[#9DCCFF] bg-opacity-20' >
         <br /> <br />                               
                                                      {/* why swift ui should be on the radar */}
             <div className='grid grid-cols-1 lg:grid-cols-2 mx-12 lg:mx-16 xl:mx-20 gap-8 xl:gap-16   bg-[#9DCCFF]' style={{fontFamily:"poppins"}}>
@@ -162,7 +162,7 @@ const Blog = () => {
  <br /> <br />
 {/* =================================related blog================================== */}
 
- <div className='bg-[#9DCCFF]  ' style={{fontFamily:"poppins"}}>
+ <div className='bg-[#9DCCFF] bg-opacity-20 ' style={{fontFamily:"poppins"}}>
         <br /> <br />
         <div className='lg:mx-16 mx-12 xl:mx-20'>
             <div className='flex justify-between'>

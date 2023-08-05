@@ -385,7 +385,7 @@ const Search = () => {
 <br /><br />
 </div>
 
-<div className='bg-[#9DCCFF] mx-12 lg:mx-28 lg:p-14  p-6 rounded-2xl flex-col xl:flex-row justify-between flex'>
+<div className='bg-[#9DCCFF] bg-opacity-20 mx-12 lg:mx-28 lg:p-14  p-6 rounded-2xl flex-col xl:flex-row justify-between flex'>
 
     <div >
       
@@ -419,7 +419,7 @@ const Search = () => {
 </div>  
 <br /><br />
 
-<div className='bg-[#9DCCFF]'>
+<div className='bg-[#9DCCFF] bg-opacity-20'>
   <br /><br />
   <div className='md:mx-16 mx-12  lg:mx-28 flex justify-between '>
     <p className='lg:text-3xl  font-semibold'>Recommended for you</p>
@@ -463,7 +463,7 @@ const Search = () => {
     </div>
 <br /><br />
     {/* what our students have to say  */}
-    <div className='bg-[#9DCCFF] '>
+    <div className='bg-[#9DCCFF] bg-opacity-20 '>
   <br /><br />
   <div className='xl:mx-28 lg:mx-16  mx-10'>
     <p className='lg:text-3xl font-semibold '>What our students have to say</p>

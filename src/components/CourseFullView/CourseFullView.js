@@ -11,7 +11,7 @@ const CourseFullView = () => {
   return (
     <div>
         {/* lg:flex-row */}
-        <div className=' xl:flex-row  bg-[#9DCCFF] flex flex-col '>
+        <div className=' xl:flex-row bg-opacity-20  bg-[#9DCCFF] flex flex-col '>
         {/* lg:w-[30%] */}
         <div className='  xl:w-[39%] '>
                 <CalenderOptions/>
@@ -34,9 +34,7 @@ const CourseFullView = () => {
 <Skin/>
 <Sky/>
 <Pink/>
-<br />
-<br />
-<br />
+
   
                 </div>
               
@@ -45,7 +43,7 @@ const CourseFullView = () => {
    {/* lg:w-[70%] */}
    <div className=' xl:w-[70%]  '>
     <GreenNav/>  
-        <div className='bg-[#9DCCFF] p-6'>
+        <div className=' p-6'>
            <br />
           
            <div className="bg-image relative bg-center h-screen rounded-xl">
@@ -115,7 +113,7 @@ Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipisci
             </div>
 
             <br /><br />
-            <div className='xl:h-screen'>
+            <div className=''>
                  <CardsWithClicks />
             </div>
             <br />

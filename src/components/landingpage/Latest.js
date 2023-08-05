@@ -52,7 +52,7 @@ const Latest = () => {
         <div>
     <div className="bg-white rounded-lg px-4 md:px-6 cursor-pointer md:flex" onClick={onClick}>
       <div className="mb-4 md:mb-0 md:mr-4 lg:mr-5 relative w-full md:w-[50%] xl:w-[100%] 2xl:w-[80%]">
-        <img src={image} alt="" className="w-full lg:w-[300px] xl:w-[400px] 2xl:w-[450px]" />
+        <img src={image} alt="" className="w-full lg:w-[300px] xl:w-[400px] xl:h-[170px] 2xl:w-[450px]" />
         <button className="absolute bottom-4 right-4 bg-[#49BBBD] rounded-full px-3 py-1 text-white">
           {buttonText}
         </button>
@@ -151,13 +151,13 @@ const Latest = () => {
 
 
 <Card
-                image={tablet}
+                image={comp}
                 buttonText= 'NEWS'
                 title="Zoom’s earliest investors are betting millions on a better Zoom for schools"
                 description="Zoom was never created to be a consumer product. Nonetheless..."
                onClick={()=>{
                 diplayCard(
-                  `${tablet}`,
+                  `${comp}`,
                    " NEWS",
                    "Zoom’s earliest investors are betting millions on a better Zoom for schools",
                    "Zoom was never created to be a consumer product. Nonetheless, and given by that"
@@ -167,13 +167,13 @@ const Latest = () => {
                
 
       <Card
-                image={tablet}
+                image={ui}
                 buttonText= 'NEWS'
                 title="Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms"
                 description="This year, investors have reaped big financial returns from betting... "
                onClick={()=>{
                 diplayCard(
-                    `${tablet}`,
+                    `${ui}`,
                    " NEWS",
                    "Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms",
                    "This year, investors have reaped big financial returns from betting on Zoom  "

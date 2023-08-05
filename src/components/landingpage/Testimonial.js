@@ -7,21 +7,21 @@ const Testimonial = () => {
   return (
     <div >
         <br /><br />
-        <div className='flex flex-col lg:flex-row mx-5 lg:mx-[0px]  2xl:mx-[100px] '>
+        <div className='flex flex-col lg:flex-row mx-5 lg:mx-[0px]  2xl:mx-[50px] '>
 
         
         {/* what they say */}
         <div className='mx-5 lg:mx-16  '>
             <div className='flex '>
                 <img src={line} alt="" className='py-4' />
-                <p className='text-xl text-[#525596]' style={{fontFamily:'poppins'}}>TESTIMONIAL</p>
+                <p className='text-xl text-[#525596]' >TESTIMONIAL</p>
             </div>            
             <br />
             <h1 className='text-6xl font-bold font-sans text-[#525596]'>What They Say?</h1><br />
             <p className='text-[#696984] text-[26px]'>TOTC has got more than 100k positive ratings from our users around the world. </p><br />
             <p className='text-[#696984] text-[26px]'>Some of the students and teachers were greatly helped by the Skilline.</p><br />
             <p className='text-[#696984] text-[26px]'>Are you too? Please give your assessment</p><br />
-            <button className='text-[#49BBBD] pl-3 sm:pl-9 md:text-[22px] lg:text-[20px] xl:text-[22px]  font-semibold xl:text-base 2xl:text-[22px] border-[#49BBBD] rounded-full border '> Write your assessment <button className='rounded-full ml-6 border-[#49BBBD] px-4 xl:px-4 py-2 border'>&#8594;</button> </button>
+            <button className='text-[#49BBBD] pl-3 sm:pl-9 md:text-[22px] lg:text-[20px] xl:text-[22px]  font-semibold xl:text-base 2xl:text-[22px] border-[#49BBBD]  rounded-full border '> Write your assessment <button className='rounded-full ml-6 border-[#49BBBD] px-4 xl:px-4 2xl:py-4 border'>&#8594;</button> </button>
         </div>
         {/* testimonial review */}
         <div className='lg:mx-4  xl:mx-16  lg:w-1/2'>
@@ -37,7 +37,7 @@ const Testimonial = () => {
             <img src={testi} className='lg:absolute' alt="" />
             
 {/* testimonial */}
-<div class="p-6  z-10 transform -mt-24 lg:mt-[500px] ml-[80px]  lg:w-[600px] bg-white border-[#F67766] border-l-[14px]  border-r-0 border-t-0 border-b-0 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
+<div class="p-6  z-10 transform -mt-24 lg:mt-[500px] ml-[80px]  lg:w-[600px]  bg-white border-[#F67766] border-l-[14px]  border-r-0 border-t-0 border-b-0 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 ">
 
 <div className='flex '>
     <img src={test_text} className='h-fullmx-6 mr-6 ' alt="" />
