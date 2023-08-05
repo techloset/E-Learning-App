@@ -116,7 +116,7 @@ const Blog = () => {
         <div className=' bg-[#9DCCFF] bg-opacity-20' >
         <br /> <br />                               
                                                      {/* why swift ui should be on the radar */}
-            <div className='grid grid-cols-1 lg:grid-cols-2 mx-12 lg:mx-16 xl:mx-20 gap-8 xl:gap-16   bg-[#9DCCFF]' style={{fontFamily:"poppins"}}>
+            <div className='grid grid-cols-1 lg:grid-cols-2 mx-12 lg:mx-16 xl:mx-20 gap-8 xl:gap-16  ' style={{fontFamily:"poppins"}}>
                 <div className='' >
                     <p className='text-black text-2xl ' >  By Themadbrains in <span className='text-[#49BBBD]'>inspiration</span> </p>
                     <br />
