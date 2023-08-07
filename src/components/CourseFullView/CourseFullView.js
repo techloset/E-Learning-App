@@ -82,7 +82,7 @@ Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipisci
             <br />
             <div className='bg-[#F48C064D] rounded-xl p-5  '>
                 <div className='flex'>
-                    <img src="https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1691366400&Signature=qtb9VSTfXqi88PqVid9ouygwhKPsybj80IwlIY6D6VG6Mfw0hlzh2RCSAtlZg5FDxGCLbczR8PF5xj66muw8~4ocbvUuiqvrfpnhYu3jpz9pZOZVId6CK-yJAd9gKEuPbeuVmNM0whu3zIPilnhscqH3GZeD38sD8ItpKo-EwzVX6S8iOqL31UV9hu4cF7dX7olTuE54wtJSe7gW~bNGdbcQ6iIR6TYO5F~P5SsM2pjGsOvDPbomeqEDgEy5~PzoMAW0elnqjZMOJ8Fn55DO5mJStD7IG16f8RBkb5G2Xwkz6HnBX2MuJJm~IsCcuDt6LDj3QMptEsiQLHm4PwNLCQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" className='rounded-xl w-16 h-16 bg-gray-300'  alt="" />
+                    <img src={icon} className='rounded-xl w-16 h-16 bg-gray-300'  alt="" />
                     <div className='mx-5 '>
                         <p className=''>Bulking Simons</p>
                         

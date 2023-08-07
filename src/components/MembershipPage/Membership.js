@@ -1,8 +1,9 @@
 import React,{useState} from 'react'
 import myimg from "../../images/nav_girl.png"
-import picture from "../../images/news_big_picrure.png"
+import news_big_picrure from "../../images/news_big_picrure.png"
 import apple from "../../images/apple.png"
 import android from "../../images/android.png"
+import nav_girl from "../../images/nav_girl.png"
 
 
 const Card = ({ img,title, content }) => {
@@ -65,7 +66,7 @@ const Membership = () => {
     const testimonials = [
         {
           id: 1,
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+          img:nav_girl,
 
           title: 'Bulkin Simons',
           content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
@@ -74,21 +75,21 @@ const Membership = () => {
           id: 2,
           title: 'Bulkin Simons',
           content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          img:nav_girl
 
         },
         {
           id: 3,
           title: 'Bulkin Simons',
           content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          img:nav_girl
 
         },
         {
           id: 4,
           title: 'Bulkin Simons',
           content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          img:nav_girl
 
         },
 
@@ -96,13 +97,13 @@ const Membership = () => {
             id: 5,
             title: 'Bulkin Simons',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          img:nav_girl
 
           }, {
             id: 6,
             title: 'Bulkin Simons',
             content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
+          img:nav_girl
 
           },
         
@@ -369,7 +370,7 @@ const Membership = () => {
 <div className='grid xl:grid-cols-2 mx-8 md:mx-16 xl:mx-20 gap-12'>
 <div className=''>
 <div className="card rounded-xl  bg-base-100 shadow-xl px-8 py-12">
-  <img className='rounded-xl' src={picture} alt="Shoes" />
+  <img className='rounded-xl' src={news_big_picrure} alt="Shoes" />
   <div className="card-body"> <br /> 
     <h2 className="card-title font-bold text-xl ">Become a Teacher </h2> <br />
     <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
@@ -382,7 +383,7 @@ const Membership = () => {
 </div>
 <div className=''>
 <div className="card rounded-xl bg-base-100 shadow-xl px-8 py-12">
-  <img className='rounded-xl' src={picture} alt="Shoes" />
+  <img className='rounded-xl' src={news_big_picrure} alt="Shoes" />
   <div className="card-body"> <br /> 
     <h2 className="card-title font-bold text-xl ">Become a Customer </h2> <br />
     <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>

@@ -8,154 +8,10 @@ import card2 from "../../images/card2.png"
 import nav_girl from "../../images/nav_girl.png"
 import CardsClicks from '../CardsClicks';
 import Cards from '../Card'
+import computer from '../../images/computer.jpg'
 
 
 const CoursePage = () => {
-
-    const articles=[
-        {
-            img:"../../images/news_big_picrure.png",
-    
-            
-        },
-        {
-           img:"https://s3-alpha-sig.figma.com/img/9150/3c25/c25d4396ab15991e79418fb801fd5efa?Expires=1688342400&Signature=HGzYZVOvKvFvOfc1VfwNGYGZy9XOBFBo6E9FXrlmZwYQ1tU6RpOkXdhgw3-MLS~1W-kCzPEXeYqt4-MH5qyjTi88dhBbgzop4BWLVLyUcz1CVU9ZLeeysQgS1-TVqAIF9liR3ms8c2czGSVq913YGCXQnq8-dOyAkCK294VLheaV~Jeq-F3OkaOwJ59hwco6--8z3AB8F2LoZts02DWCAryyXMTb6Couo~IE2tnYUA2i-n5fYdHEb7X5oBO-B9TgWmJD8tv8ypYiA5Uc8FryM4LIPlmi5pLgZ~vaFaBrYTSoFYWFm2unPV6tofZQqUQ6VhNguQj2XGXemxqysE1GIg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-        },
-        {
-            img:"https://s3-alpha-sig.figma.com/img/5abc/f770/24978c219bf2223fc9e32ec5fae8375f?Expires=1688342400&Signature=V5xWUmzGtCwxwvdl-7lBecAcRZb7J7sIoL603CIofgvu~mPL5QrcrMKdKLz9oUu7KCv2BDhjPxtrMIfo-QU8EaauSA9QHVcvdFBXrRCqLm7Dgo4Y8aDyva17NwmhbqhArySOTt0nu7Jldj-zbnga~rBl4LgjoCt0hxZJ9flkahUkyQzDw0DyvSIWquDeCUVLngfw4SzgD8d7OsFlkgNUI6aHtnGAAyQ0tOSEa8ZqC-Vz1pB-cx2kWYkV0FJ9g2UDLCGrOiNrBY~UMDYBlGkQciNHMd5JdaEAhIqB35NdBq8DaQ0ml1Icfz-LkLEh9d7RHUeZe~gKjCA3eaYY1Rs03w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-    
-            
-        },{
-    
-            img:"https://s3-alpha-sig.figma.com/img/e4c7/276a/25a9cc6960c67cafa4666142463a3cc6?Expires=1688342400&Signature=p1a7XLq4~svUz2zwnKiJFg3Bp2iRuJHQyE84C2tnVvvIGBO3fiIv7ZoonVXrGaMFXC-rc9Ig19qmVMes1FjKbIRcTEi3j-uStiTYsBS6M5UtjwKkRdVtzssV4mz3-3IZSqE37AzdjU0yFpx1wMn1y1UatV1tZ29nBmKk1puK5JO~jr3BGAID5GxddHqpZhwDmSOqM~KKegaUcqEAu4Cs9zkvQO9f1dydyP74VQDOWpJ2hrE0~5XYXQ76X615MDKVhqWa3AZMTThmppyx-4eVrShYt8AdIwdtLRvxU6z8Du-S2cDRJMW5QaMsEjDC-KHE3V8691vwSur5mlJHtfOWig__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-            
-        },
-        {
-            img:"https://s3-alpha-sig.figma.com/img/59e9/1cde/877aacb096082025aaa7528e15f2789e?Expires=1688342400&Signature=OzEgcImasDBEmvqlqbTCv8345j72PvfOQmt39Ou5lJ8322L4CubGxKGgmb2ibnTSHj-jcNm5v-lx1DjLzdaC7jShO6NVW5zC5f5anr~4xsHMUDxlPR1hdTsJ0vHuo7a2RKdOjrUWwHECOSztK-NJ7zyqQBq7jdi7FJWwfas~0~jS67ktm4H0BVPp-1oVuMqMVhptixDxOsK~JrtddTaCsUWG~QSGaNiSd~AKf6ccPtXKWwO2AiyWfS4I5hvU9L--NXyE8fUujWWW5rgcY12rlXLAHE7pi~PLs6Jp6gwFgSEDtn4idPM8d6Q~hJvzJyb7af5KduNBVzhDKFml-sKNuA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-    
-            
-        },
-        {
-           img:"https://s3-alpha-sig.figma.com/img/9150/3c25/c25d4396ab15991e79418fb801fd5efa?Expires=1688342400&Signature=HGzYZVOvKvFvOfc1VfwNGYGZy9XOBFBo6E9FXrlmZwYQ1tU6RpOkXdhgw3-MLS~1W-kCzPEXeYqt4-MH5qyjTi88dhBbgzop4BWLVLyUcz1CVU9ZLeeysQgS1-TVqAIF9liR3ms8c2czGSVq913YGCXQnq8-dOyAkCK294VLheaV~Jeq-F3OkaOwJ59hwco6--8z3AB8F2LoZts02DWCAryyXMTb6Couo~IE2tnYUA2i-n5fYdHEb7X5oBO-B9TgWmJD8tv8ypYiA5Uc8FryM4LIPlmi5pLgZ~vaFaBrYTSoFYWFm2unPV6tofZQqUQ6VhNguQj2XGXemxqysE1GIg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-        },
-        {
-            img:"https://s3-alpha-sig.figma.com/img/5abc/f770/24978c219bf2223fc9e32ec5fae8375f?Expires=1688342400&Signature=V5xWUmzGtCwxwvdl-7lBecAcRZb7J7sIoL603CIofgvu~mPL5QrcrMKdKLz9oUu7KCv2BDhjPxtrMIfo-QU8EaauSA9QHVcvdFBXrRCqLm7Dgo4Y8aDyva17NwmhbqhArySOTt0nu7Jldj-zbnga~rBl4LgjoCt0hxZJ9flkahUkyQzDw0DyvSIWquDeCUVLngfw4SzgD8d7OsFlkgNUI6aHtnGAAyQ0tOSEa8ZqC-Vz1pB-cx2kWYkV0FJ9g2UDLCGrOiNrBY~UMDYBlGkQciNHMd5JdaEAhIqB35NdBq8DaQ0ml1Icfz-LkLEh9d7RHUeZe~gKjCA3eaYY1Rs03w__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-    
-            
-        },{
-    
-            img:"https://s3-alpha-sig.figma.com/img/e4c7/276a/25a9cc6960c67cafa4666142463a3cc6?Expires=1688342400&Signature=p1a7XLq4~svUz2zwnKiJFg3Bp2iRuJHQyE84C2tnVvvIGBO3fiIv7ZoonVXrGaMFXC-rc9Ig19qmVMes1FjKbIRcTEi3j-uStiTYsBS6M5UtjwKkRdVtzssV4mz3-3IZSqE37AzdjU0yFpx1wMn1y1UatV1tZ29nBmKk1puK5JO~jr3BGAID5GxddHqpZhwDmSOqM~KKegaUcqEAu4Cs9zkvQO9f1dydyP74VQDOWpJ2hrE0~5XYXQ76X615MDKVhqWa3AZMTThmppyx-4eVrShYt8AdIwdtLRvxU6z8Du-S2cDRJMW5QaMsEjDC-KHE3V8691vwSur5mlJHtfOWig__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-            
-        },
-    
-      ]
-
-    const testimonials = [
-        {
-          id: 1,
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
-
-          title: '1Bulkin Simons',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-        },
-        {
-          id: 2,
-          title: '2Bulkin Simons',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-
-        },
-        {
-          id: 3,
-          title: '3Bulkin Simons',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-
-        },
-        {
-          id: 4,
-          title: '4Bulkin Simons',
-          content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-
-        },
-
-        {
-            id: 5,
-            title: '5Bulkin Simons',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-
-          }, {
-            id: 6,
-            title: '6Bulkin Simons',
-            content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmod',
-          img:"https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688947200&Signature=YapYaiVXR6hRcDhADW-MMZ9f4uhb6aMmFoJWYe6Eh0SsBpXx~n6sAVFhotMp3Gkd1QeaCane4Nf4d9atcYs3IRaEGYPrr762tPCZIF-KQ8e1GRN5CND8sF5fWf-y2~O0bihm2-RTyXEVeg8Kf8-LEUPSAemTU~Uq3U61FIPPNmooqSaK4SiX-6ky4FDa4o42uqNLoFkDaMOApR6TlvylO9Nv7ssuUPuMaBF48Eceex-4EjdceaRiKMzqNVmYaju2T~y1sUNq9Rzk24vhESOb-LNYA0rWHOvrf5Rvb0Myz5m-vWDbBh4nIWrVebbIakOekjhtADojKSWMkGO648rsew__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4"
-
-          },
-        
-      ];
-
-    const [startIndex, setStartIndex] = useState(0);
-    const [visibleCards, setVisibleCards] = useState(articles.slice(0, 4));
-  
-
-    // const handleNext = () => {
-    //   if (startIndex + 4 < articles.length) {
-    //     setStartIndex(startIndex + 1);
-    //     setVisibleCards(articles.slice(startIndex + 1, startIndex + 5));
-    //   }
-    // };
-  
-    // const handlePrev = () => {
-    //   if (startIndex > 0) {
-    //     setStartIndex(startIndex - 1);
-    //     setVisibleCards(articles.slice(startIndex - 1, startIndex + 3));
-    //   }
-    // };
-    
-  
-
-
-    const Card = ({ img }) => {
-        return (
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <img className=" w-[335px] h-[239px] rounded-xl" src={img} alt='myimageis here'  />
-              <br />
-              <div className='flex justify-between'>
-                  <div className='flex justify-between'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-<path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
-</svg>
-
-                      <p className='ml-3'> Design</p>
-                  </div>
-                  <div className='flex justify-between'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-<path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-                  <p className='ml-3'>3 Months</p>
-                  </div>
-                  </div>
-                  <br />
-                  <p className='font-bold text-xl '>AWS Certified solutions Architect</p>
-                  <br />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
-              <br />
-           <div className='flex justify-between'>
-              <div className='flex'>
-                  <img src="https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688342400&Signature=RTQdQ1lfg48W9SuIszsFDalJqHktTqfSi5MOmOPzu-H6V~3EXyISuhw9nd3MWLb59oGeDReiYuoXmCvYBNiK1eBt55VdQluB1TQFALwtxV1xGeAHL3ihmOC90d0wS68Elds2kmayvHfBtY3xywoXYSoWV5wBPmbMTFQHLsfbXz1nu7XAhbaKNkLFPtGd3xNbB1aThMXBx3d1FDLizFeQm-32098qWxkcte8VxLBmitte4JiZAlCHs1CTMyVI79tMmsgCPct47v5S4CBEgEIUKDR8TGU6viyNrnJjGKrGQRqzrYbmq2Cr1f5dzqZvKQ7aXi5rHptOrGcAmgw326P8Bg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="ProfilePicture" className="w-10 h-10 rounded-full" />
-                  <p className='ml-4 mt-1'>Lina</p> 
-            </div>
-            </div>
-
-
-         
-          </div>
-        );
-      };
-    
 
     const FavouriteCards=[
         {
@@ -241,7 +97,7 @@ const CoursePage = () => {
     const [cards, setCards] = useState([
         {
             id : 1,
-            image:"http://localhost:3000/static/media/news_big_picrure.af412a83ab12d3a41f54.png",
+            image:pic,
             title:"AWS Certified Solutions Architect",
             descriptionless:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...",
             descriptionmore:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively",
@@ -249,21 +105,21 @@ const CoursePage = () => {
         },
         {
             id : 2,
-            image:"http://localhost:3000/static/media/comp.a0280fc3331e867b1215.png",
+            image:comp,
             title:"AWS Certified Solutions Architect",
             descriptionless:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...",
             descriptionmore:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively",
             views:"251232"
         }, {
             id : 3,
-            image:"http://localhost:3000/static/media/code.94d78c2e554fd8b1e94d.png",
+            image:code,
             title:"AWS Certified Solutions Architect",
             descriptionless:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...",
             descriptionmore:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively",
             views:"251232"
         }, {
             id : 4,
-            image:"http://localhost:3000/static/media/comp.a0280fc3331e867b1215.png",
+            image:comp,
             title:"AWS Certified Solutions Architect",
             descriptionless:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...",
             descriptionmore:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively",
@@ -271,7 +127,7 @@ const CoursePage = () => {
         },
         {
             id : 5,
-            image:"http://localhost:3000/static/media/code.94d78c2e554fd8b1e94d.png",
+            image:code,
             title:"AWS Certified Solutions Architect",
             descriptionless:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...",
             descriptionmore:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively",
@@ -279,7 +135,7 @@ const CoursePage = () => {
         },
         {
             id : 6,
-            image:"http://localhost:3000/static/media/news_big_picrure.af412a83ab12d3a41f54.png",
+            image:pic,
             title:"AWS Certified Solutions Architect",
             descriptionless:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...",
             descriptionmore:"Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively",
@@ -434,60 +290,7 @@ const CoursePage = () => {
 
 <br /><br /><br />
 
-               {/* ============================marketing articles ========================== */}
-               {/* <div className='mx-28' style={{fontFamily:"poppins"}}>
-    <div className=''>
-    <div className='flex justify-between'>
-            <div className='font-medium text-[30px] '>Marketing Articles</div>
-            <div className='text-[#49BBBD] text-[20px] font-bold'>See all</div>
-    </div> 
-    <br /> <br /> 
-    <div  className='grid   2xl:grid-cols-4  lg:grid-cols-3  md:grid-cols-2 gap-x-8 gap-y-16 '>
-        {articles.map((val)=>{
-    return(
-        <div className="mx-auto grid  bg-white shadow-md overflow-hidden px-7 py-12 rounded-xl" >
-        <img className=" w-[335px] h-[239px] rounded-xl" src={val.img} alt='myimageis here'  />
-              <br />
-              <div className='flex justify-between'>
-                  <div className='flex justify-between'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-<path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6A2.25 2.25 0 016 3.75h2.25A2.25 2.25 0 0110.5 6v2.25a2.25 2.25 0 01-2.25 2.25H6a2.25 2.25 0 01-2.25-2.25V6zM3.75 15.75A2.25 2.25 0 016 13.5h2.25a2.25 2.25 0 012.25 2.25V18a2.25 2.25 0 01-2.25 2.25H6A2.25 2.25 0 013.75 18v-2.25zM13.5 6a2.25 2.25 0 012.25-2.25H18A2.25 2.25 0 0120.25 6v2.25A2.25 2.25 0 0118 10.5h-2.25a2.25 2.25 0 01-2.25-2.25V6zM13.5 15.75a2.25 2.25 0 012.25-2.25H18a2.25 2.25 0 012.25 2.25V18A2.25 2.25 0 0118 20.25h-2.25A2.25 2.25 0 0113.5 18v-2.25z" />
-</svg>
-
-                      <p className='ml-3'> Design</p>
-                  </div>
-                  <div className='flex justify-between'>
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
-<path strokeLinecap="round" strokeLinejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-</svg>
-
-                  <p className='ml-3'>3 Months</p>
-                  </div>
-                  </div>
-                  <br />
-                  <p className='font-bold text-xl '>AWS Certified solutions Architect</p>
-                  <br />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
-              <br />
-           <div className='flex justify-between'>
-              <div className='flex'>
-                  <img src="https://s3-alpha-sig.figma.com/img/2f32/d3a9/082c2e2832481561feec93a5e5c5e8d6?Expires=1688342400&Signature=RTQdQ1lfg48W9SuIszsFDalJqHktTqfSi5MOmOPzu-H6V~3EXyISuhw9nd3MWLb59oGeDReiYuoXmCvYBNiK1eBt55VdQluB1TQFALwtxV1xGeAHL3ihmOC90d0wS68Elds2kmayvHfBtY3xywoXYSoWV5wBPmbMTFQHLsfbXz1nu7XAhbaKNkLFPtGd3xNbB1aThMXBx3d1FDLizFeQm-32098qWxkcte8VxLBmitte4JiZAlCHs1CTMyVI79tMmsgCPct47v5S4CBEgEIUKDR8TGU6viyNrnJjGKrGQRqzrYbmq2Cr1f5dzqZvKQ7aXi5rHptOrGcAmgw326P8Bg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="ProfilePicture" className="w-10 h-10 rounded-full" />
-                  <p className='ml-4 mt-1'>Lina</p> 
-              </div>
-              <div className='flex'>
-                  <del className='mt-1 mr-4'>$100</del>
-                  <p className='text-[#49BBBD] font-bold text-2xl'>$80</p> 
-              </div>
-           </div>
-      </div>
-    )
-   })}
-
-    </div>
-        
-   
-    </div>
-</div> */}
+               
 
 
 <div className=' mx-10 md:mx-20 xl:mx-24'>
@@ -504,38 +307,6 @@ const CoursePage = () => {
 
                 <Cards/>
                 <br /><br />
-{/* <div className='mx-12 md:mx-16 xl:mx-24'>
-<div className='flex justify-between   '>
-        <div className=' text-[30px]  font-semibold'>Get choice of your choice</div>
-        <div className='text-[#49BBBD] text-[20px] font-bold'>See all</div>
-        </div>
-<br />
-<Cards/>
-</div> */}
-
-
-{/* <div className='mx-28'>
-<div className='flex justify-between '>
-        <div className='font-medium text-[30px] '>Get choice of your choice</div>
-        <div className='text-[#49BBBD] text-[20px] font-bold'>See all</div>
-        </div>
-        <br /><br /><br />
-<div className="flex justify-between">
-   <div className="items-center relative ">
-  <div className="grid grid-cols-4 gap-12">
-    {visibleCards.map((testimonial) => (
-      <Card
-        key={testimonial.id}
-        img={testimonial.img}
-       
-      />
-    ))}
-  </div>
-</div>
-
-    </div>
-</div> */}
-
 <br /><br /><br />
 {/* {======================================online coaching==========================================} */}
 
@@ -558,20 +329,6 @@ const CoursePage = () => {
 
 
         <br /><br /><br />
-{/* <div className="flex justify-between">
-   <div className="items-center relative ">
-  <div className="grid grid-cols-4 gap-12">
-    {visibleCards.map((testimonial) => (
-      <Card
-        key={testimonial.id}
-        img={testimonial.img}
-       
-      />
-    ))}
-  </div>
-</div>
-
-    </div> */}
 </div>
 
 <Cards/>
@@ -586,20 +343,6 @@ const CoursePage = () => {
         <div className='text-[#49BBBD] text-[20px] font-bold'>See all</div>
         </div>
         
-{/* <div className="flex justify-between">
-   <div className="items-center relative ">
-  <div className="grid grid-cols-4 gap-12">
-    {visibleCards.map((testimonial) => (
-      <Card
-        key={testimonial.id}
-        img={testimonial.img}
-       
-      />
-    ))}
-  </div>
-</div>
-
-    </div> */}
 </div>
 <br /><br />
 <Cards/>

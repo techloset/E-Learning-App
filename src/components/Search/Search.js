@@ -4,6 +4,12 @@ import Card from '../Card'
 import pic from "../../images/Group 71.png"
 import student from "../../images/student.png"
 import call1 from "../../images/call1.png"
+import img from "../../images/news_big_picrure.png"
+import creator1 from "../../images/creator1.png"
+import creator2 from "../../images/creator2.png"
+import creator3 from "../../images/creator3.png"
+import creator4 from "../../images/creator4.png"
+
 
 const Search = () => {
   const [searchTerm, setSearchTerm] = useState('');
@@ -36,28 +42,28 @@ const Search = () => {
 
   const creators=[
     {
-      img:"https://s3-alpha-sig.figma.com/img/4364/3df7/a0cddfa0ae7c584b93b20c53a064580a?Expires=1691366400&Signature=Cx5RkIE8jTKhy3RJkOuRHZoU4HDDuMFsaM6OTZerICvDmMX-T9O6~x1oM4Ip5Zhdz8pnjHfdJaalTS9Y7EtJtQYGtmPe6QY4U07fxaa29EzuiBBYCMnIyQYgPI4g5Su2bCWJOdHiKE1tGC8Ke50vbiQet3AR20dBdW5LaPbikA9qEAw~ccS3v4-ta4VezZCZ9scJwpCi1zJidkqPVDT3uVrPcWvIjEOU3LiWhqJZSEsrmVYgKOTwlLmbrinAXpTEtIhlsnuNn1lYRQctVGgl26rH9ODSvW13-Evebvaa5BiyoNPqi63MfnEIXxYkhMc3vV11Okwlg4jmZSo7rRfjGQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      img:creator1,
       name: "Jane Cooper",
       profession:'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor',
     },
     {
-      img:"https://s3-alpha-sig.figma.com/img/6a32/4de5/c94a9ba1a6d453c5348b067f8698108b?Expires=1691366400&Signature=UxQd7~qVqiuh0nxE8guxgskZSnZO3mWcpmU50wZpDd-agsx0mg8WDK0V8KWzXzlFgJpo6YWkFv09ob29XJ5A8ivwlS-50Yb1FoPNSCXi3ReZuiB5QgnC~2sXZb0Sn-jvInc3MsqBK-cvdCZ-c42l3UHa4t9X5lA-7Tnc7KQMRD~MhbwsOXQ3JjeFWmGmGo6nni0HBmzcU4h4JY1cB8iZWYAVONaFIPahBpZCYyz9tBmFMi1G5oL21p~N71TedhH6tqtKo3QS5c~tC6wPgf9qsvu7iW5jK6lDuqURcabVpWprAXUYtk1PnK8OdzlPe8PMXuTU849GvL4ZMYEfuBRk0A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      img:creator2,
       name: "Adam",
       profession:'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor',
     }, {
-      img:"https://s3-alpha-sig.figma.com/img/ada9/8f21/b111783e76881ec5644408bdde7b0edd?Expires=1691366400&Signature=C3jtuonX~ZEPmHLcdnVt9UlJOUcMtL~OVZJbK9~YpKwCgW1I9GyFYTm1QdRzqiGe4-xLChaOS5ez8arzBt74EpjusLp1Xclaq0Ckfem8TXVkJmqruLr69okFFri8mWBOBbE8RTx1kRfgvp9epAh28A2II~44tKlrv3etI8XJwvWEHrVBbf-f~xTgXbhAqILJX0vElscn-yfZtIKtu4r0JVKqCpl9aAa6CVOKKGxnH~kTSBEHmieVHiiKMi0yl12Ln2QJ3Jm1Vv1mbYfgT5qrxOQB9WjqadzKpdNja1xaC1mHDOfu4XZQzsfXGZwOPg1W5ANIlBcVUPbCXPZqXxNzLA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      img:creator3,
       name: "Tomara",
       profession:'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor',
     }, {
-      img:"https://s3-alpha-sig.figma.com/img/4364/3df7/a0cddfa0ae7c584b93b20c53a064580a?Expires=1691366400&Signature=Cx5RkIE8jTKhy3RJkOuRHZoU4HDDuMFsaM6OTZerICvDmMX-T9O6~x1oM4Ip5Zhdz8pnjHfdJaalTS9Y7EtJtQYGtmPe6QY4U07fxaa29EzuiBBYCMnIyQYgPI4g5Su2bCWJOdHiKE1tGC8Ke50vbiQet3AR20dBdW5LaPbikA9qEAw~ccS3v4-ta4VezZCZ9scJwpCi1zJidkqPVDT3uVrPcWvIjEOU3LiWhqJZSEsrmVYgKOTwlLmbrinAXpTEtIhlsnuNn1lYRQctVGgl26rH9ODSvW13-Evebvaa5BiyoNPqi63MfnEIXxYkhMc3vV11Okwlg4jmZSo7rRfjGQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      img:creator1,
       name: "Jane Cooper",
       profession:'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor',
     }, {
-      img:"https://s3-alpha-sig.figma.com/img/4364/3df7/a0cddfa0ae7c584b93b20c53a064580a?Expires=1691366400&Signature=Cx5RkIE8jTKhy3RJkOuRHZoU4HDDuMFsaM6OTZerICvDmMX-T9O6~x1oM4Ip5Zhdz8pnjHfdJaalTS9Y7EtJtQYGtmPe6QY4U07fxaa29EzuiBBYCMnIyQYgPI4g5Su2bCWJOdHiKE1tGC8Ke50vbiQet3AR20dBdW5LaPbikA9qEAw~ccS3v4-ta4VezZCZ9scJwpCi1zJidkqPVDT3uVrPcWvIjEOU3LiWhqJZSEsrmVYgKOTwlLmbrinAXpTEtIhlsnuNn1lYRQctVGgl26rH9ODSvW13-Evebvaa5BiyoNPqi63MfnEIXxYkhMc3vV11Okwlg4jmZSo7rRfjGQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      img:creator1,
       name: "Jane Cooper",
       profession:'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor',
     }, {
-      img:"https://s3-alpha-sig.figma.com/img/4364/3df7/a0cddfa0ae7c584b93b20c53a064580a?Expires=1691366400&Signature=Cx5RkIE8jTKhy3RJkOuRHZoU4HDDuMFsaM6OTZerICvDmMX-T9O6~x1oM4Ip5Zhdz8pnjHfdJaalTS9Y7EtJtQYGtmPe6QY4U07fxaa29EzuiBBYCMnIyQYgPI4g5Su2bCWJOdHiKE1tGC8Ke50vbiQet3AR20dBdW5LaPbikA9qEAw~ccS3v4-ta4VezZCZ9scJwpCi1zJidkqPVDT3uVrPcWvIjEOU3LiWhqJZSEsrmVYgKOTwlLmbrinAXpTEtIhlsnuNn1lYRQctVGgl26rH9ODSvW13-Evebvaa5BiyoNPqi63MfnEIXxYkhMc3vV11Okwlg4jmZSo7rRfjGQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4",
+      img:creator1,
       name: "Jane Cooper",
       profession:'Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor',
     },
@@ -399,18 +405,18 @@ d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.2
 
 
 <div className='lg:flex lg:flex-col'>
-<img alt="images" src='https://s3-alpha-sig.figma.com/img/6a32/4de5/c94a9ba1a6d453c5348b067f8698108b?Expires=1691366400&Signature=UxQd7~qVqiuh0nxE8guxgskZSnZO3mWcpmU50wZpDd-agsx0mg8WDK0V8KWzXzlFgJpo6YWkFv09ob29XJ5A8ivwlS-50Yb1FoPNSCXi3ReZuiB5QgnC~2sXZb0Sn-jvInc3MsqBK-cvdCZ-c42l3UHa4t9X5lA-7Tnc7KQMRD~MhbwsOXQ3JjeFWmGmGo6nni0HBmzcU4h4JY1cB8iZWYAVONaFIPahBpZCYyz9tBmFMi1G5oL21p~N71TedhH6tqtKo3QS5c~tC6wPgf9qsvu7iW5jK6lDuqURcabVpWprAXUYtk1PnK8OdzlPe8PMXuTU849GvL4ZMYEfuBRk0A__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
+<img alt="images" src={creator2}
 className="mb-2 w-20 h-20 inline-block rounded-full p-3 lg:mx-3 "
 />
-<img alt="images" src='https://s3-alpha-sig.figma.com/img/4364/3df7/a0cddfa0ae7c584b93b20c53a064580a?Expires=1691366400&Signature=Cx5RkIE8jTKhy3RJkOuRHZoU4HDDuMFsaM6OTZerICvDmMX-T9O6~x1oM4Ip5Zhdz8pnjHfdJaalTS9Y7EtJtQYGtmPe6QY4U07fxaa29EzuiBBYCMnIyQYgPI4g5Su2bCWJOdHiKE1tGC8Ke50vbiQet3AR20dBdW5LaPbikA9qEAw~ccS3v4-ta4VezZCZ9scJwpCi1zJidkqPVDT3uVrPcWvIjEOU3LiWhqJZSEsrmVYgKOTwlLmbrinAXpTEtIhlsnuNn1lYRQctVGgl26rH9ODSvW13-Evebvaa5BiyoNPqi63MfnEIXxYkhMc3vV11Okwlg4jmZSo7rRfjGQ__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
-className="mb-2 w-20 h-20 inline-block rounded-full p-3 lg:mx-3 "
-/>
-
-    <img alt="images" src='https://s3-alpha-sig.figma.com/img/ada9/8f21/b111783e76881ec5644408bdde7b0edd?Expires=1691366400&Signature=C3jtuonX~ZEPmHLcdnVt9UlJOUcMtL~OVZJbK9~YpKwCgW1I9GyFYTm1QdRzqiGe4-xLChaOS5ez8arzBt74EpjusLp1Xclaq0Ckfem8TXVkJmqruLr69okFFri8mWBOBbE8RTx1kRfgvp9epAh28A2II~44tKlrv3etI8XJwvWEHrVBbf-f~xTgXbhAqILJX0vElscn-yfZtIKtu4r0JVKqCpl9aAa6CVOKKGxnH~kTSBEHmieVHiiKMi0yl12Ln2QJ3Jm1Vv1mbYfgT5qrxOQB9WjqadzKpdNja1xaC1mHDOfu4XZQzsfXGZwOPg1W5ANIlBcVUPbCXPZqXxNzLA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
+<img alt="images" src={creator1}
 className="mb-2 w-20 h-20 inline-block rounded-full p-3 lg:mx-3 "
 />
 
-<img alt="images" src='https://s3-alpha-sig.figma.com/img/c975/507a/b8fc3e147dca2c0bccccbead1c14ebb6?Expires=1691366400&Signature=moIRXPtLE4gAoJuaVPlUo9Fd6Ue8LSZKT9E4j~dKwF~2KgFzn-MaAx1FskoauXHYuTeQIKlCrf0V2wive3mqfRyShcmjWvD9ce6lHiYUzgnXOxBPBcEbvo7aS22skKxOoKBXND48ru2USEloB0-U3ssxZiCxRSPL1R8g4C9JAROL-kj9SMeltBKhtmiAkPVbc8IubYSlpYqyhrbysdHl6XJMSLCzFGrjk8xrekKqJxYHmKtxE8S9auZ-wvWDihGcj1i3TuGhHNuN8L-Gtb1i6ICTp90Y7ISzCsjGqNZz7Aexa3y9UQg9g4AYPROCr1qlo8KayuYqLckBJt3zcbKbeA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4'
+    <img alt="images" src={creator3}
+className="mb-2 w-20 h-20 inline-block rounded-full p-3 lg:mx-3 "
+/>
+
+<img alt="images" src={creator4}
 className="mb-2 w-20 h-20 inline-block rounded-full p-3 lg:mx-3 "
 />
 </div>
@@ -440,7 +446,7 @@ className="mb-2 w-20 h-20 inline-block rounded-full p-3 lg:mx-3 "
   return (
   <div class="relative  rounded-xl  shadow-lg cursor-pointer">
     <div className='bg-gray-900 rounded-xl'>
-      <img class="object-cover w-full rounded-xl h-[400px] " src="https://s3-alpha-sig.figma.com/img/5abc/f770/24978c219bf2223fc9e32ec5fae8375f?Expires=1691366400&Signature=IL5tt4hNIWBrrCuwcLPRaWLiNP7L3zyrEPl81L5PQrcWfULBag~GA6QE360FkXHgeJ-4R2FWJSd05LXWRgWX087Z3Y42cypHE~lxmH64ebmxt6cwoYEsrwfkjkUtOadG609jDcWbTLuvOv3Din~Lf-5fuA0eP3RPWgwWle66azxnHGZf1bflM-PbEfuq4h7OvV-EXwBYwNopXJ3LXkLppyG3SX6x4-Faw78s4nLhlaFSnQ8lfU6ADelerRKeNm7iMChSFt8mEGbiGUyV15y4TFroTGf39XBwlPvu-W7n6zuSvs1MPGHQxe1uGCVe4GOSatZECF9B~-xXRuehOqzzGg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt='iki'/>
+      <img class="object-cover w-full rounded-xl h-[400px] " src={img} alt='iki'/>
     </div>
 	  <div class="absolute inset-0 bg-gray-900  rounded-xl opacity-40"></div>
   <div class="absolute inset-0 top-0 left-0 px-10 py-4  ">
