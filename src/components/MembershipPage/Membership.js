@@ -1,11 +1,13 @@
 import React,{useState} from 'react'
 import myimg from "../../images/nav_girl.png"
 import picture from "../../images/news_big_picrure.png"
+import apple from "../../images/apple.png"
+import android from "../../images/android.png"
 
 
 const Card = ({ img,title, content }) => {
     return (
-      <div className="bg-white rounded-lg shadow-lg p-8">
+      <div className="bg-white rounded-3xl  shadow-lg p-9">
         <img src={myimg} alt="" className='  w-[118px] h-[118px] bg-[#D9D9D9] justify-center mx-auto ' />
         <br />
         <h3 className="text-center text-xl font-semibold mb-2">{title}</h3>
@@ -165,7 +167,7 @@ const Membership = () => {
   <div className="py-8 px-4 mx-auto  lg:py-16 lg:px-6">
       <div className="space-y-8 lg:grid lg:grid-cols-3 gap-0 lg:space-y-0">
         
-      <div className="flex flex-col  mx-auto max-w-lg text-gray-900 bg-white py-8  dark:bg-gray-800 dark:text-white">
+      <div className="flex flex-col p-6  mx-auto max-w-lg text-gray-900 bg-white py-8  dark:bg-gray-800 dark:text-white">
           
                 <p className='text-[#49BBBD] font-semibold text-xl '>Like a pussy</p>
                 <br />
@@ -173,15 +175,15 @@ const Membership = () => {
     
                             <ul className="mb-8 space-y-4 text-left">
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-gray-400 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#C2C2C2] bg-opacity-40 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Components-driven system</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-gray-400 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#C2C2C2] bg-opacity-40 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Sales-boosting landing pages</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-gray-400 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#C2C2C2] bg-opacity-40 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Awesome Feather icons pack </span>
                   </li>
                 
@@ -195,10 +197,10 @@ const Membership = () => {
           <div className="flex flex-col p-6 mx-auto max-w-lg text-gray-900 bg-white rounded-lg border border-gray-100 shadow dark:border-gray-600 xl:p-8 dark:bg-gray-800 dark:text-white">
                 <div className='flex justify-between'>
                     <div className='flex'>
-                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+                    {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-</svg>
-                       <p className='text-[#49BBBD] font-semibold text-xl'>Individual</p> 
+</svg> */}
+                       <p className='text-[#49BBBD] font-semibold text-xl'>👤 Individual</p> 
                     </div>
                     <button className='text-black px-4 rounded-full border-2 border-blue-600'>BEST!</button>
                 </div>
@@ -207,23 +209,23 @@ const Membership = () => {
     
                             <ul className="mb-8 space-y-4 text-left">
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-yellow-400 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#FDCB6E] text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Components-driven system</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-yellow-400 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#FDCB6E] text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Sales-boosting landing pages</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-yellow-400 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#FDCB6E] text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Awesome Feather icons pack </span>
                   </li>
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-yellow-400 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#FDCB6E] text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Themed into 3 different styles  </span>
                   </li> 
                    <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-yellow-400 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#FDCB6E] text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Will help to learn Figma </span>
                   </li>
                  
@@ -233,12 +235,12 @@ const Membership = () => {
 
           </div>
         
-          <div className="flex flex-col py-6 mx-auto max-w-md text-gray-900 bg-white rounded-lg xl:py-8 dark:bg-gray-800 dark:text-white">
+          <div className="flex flex-col p-6 mx-auto max-w-md text-gray-900 bg-white rounded-lg xl:py-8 dark:bg-gray-800 dark:text-white">
           <div className='flex'>
-          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
+          {/* <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z" />
-</svg>
-                       <p className='text-[#49BBBD] font-semibold text-xl'>Corporate</p>
+</svg> */}
+                       <p className='text-[#49BBBD] font-semibold text-xl'>👥 Corporate</p>
                         
                     </div>
                     <br />
@@ -246,19 +248,19 @@ const Membership = () => {
     
                             <ul  className="mb-8 space-y-4 text-left">
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#55EFC4] text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#55EFC4] bg-opacity-40 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Components-driven system</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#55EFC4] text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#55EFC4] bg-opacity-40 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Sales-boosting landing pages</span>
                   </li>
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#55EFC4] text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#55EFC4] bg-opacity-40 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Awesome Feather icons pack </span>
                   </li>
                   <li className="flex items-center space-x-3">
-                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#55EFC4] text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
+                                            <svg className="flex-shrink-0 w-8 h-8 p-1 rounded-full bg-[#55EFC4] bg-opacity-40 text-black dark:text-green-400" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path></svg>
                       <span>Themed into 3 different styles  </span>
                   </li> 
                   
@@ -338,22 +340,22 @@ const Membership = () => {
     {/* =========================app is vailable for freee=================================================================== */}
 
 <div className=' mx-10 xl:mx-28 relative -top-16'>
-<div className='bg-[#252641] text-white rounded-xl px-12 xl:px-28 '>
+<div className='bg-[#252641] text-white rounded-xl px-12 xl:px-24 '>
     <br /><br />
-    <div className='flex flex-col md:flex-row justify-between font-bold'>
-      <h1 className='xl:text-3xl md:text-2xl font-bold '>APP is available or free</h1>
-  
-      <div className='flex flex-col md:flex-row mt-3 sm:mt-0 '>
-        <div className='  flex flex-col sm:flex-row px-2 md:px-12 py-2 rounded-xl mx-8  bg-[#29B9E7]'>
-        <svg className="h-8 w-8 text-center justify-center mx-auto "   width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="3" y1="10" x2="3" y2="16" />  <line x1="21" y1="10" x2="21" y2="16" />  <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />  <line x1="8" y1="3" x2="9" y2="5" />  <line x1="16" y1="3" x2="15" y2="5" />  <line x1="9" y1="18" x2="9" y2="21" />  <line x1="15" y1="18" x2="15" y2="21" /></svg>
-          <button>Android APP</button>
+    <div className='flex flex-col xl:flex-row justify-between font-bold'>
+      <h1 className='xl:text-3xl sm:text-2xl text-center font-bold '>APP is available or free </h1>
+      <div className='flex flex-col md:flex-row justify-center text-xl  sm:mt-0 '>
+        <div className='w-full justify-center mx-2 flex flex-col p-5 h-14 md:w-60 md:flex-row  text-center rounded-xl 2xl:mx-8 font-bold  bg-[#29B9E7]'>
+          <img src={android} className='w-7 h-4 mt-1 justify-center mx-auto md:mx-2' alt="" />
+        {/* <svg className="h-8 w-8 text-center justify-center mx-auto "   width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <line x1="3" y1="10" x2="3" y2="16" />  <line x1="21" y1="10" x2="21" y2="16" />  <path d="M7 9h10v8a1 1 0 0 1 -1 1h-8a1 1 0 0 1 -1 -1v-8a5 5 0 0 1 10 0" />  <line x1="8" y1="3" x2="9" y2="5" />  <line x1="16" y1="3" x2="15" y2="5" />  <line x1="9" y1="18" x2="9" y2="21" />  <line x1="15" y1="18" x2="15" y2="21" /></svg> */}
+          <button className=''>Android APP</button>
         </div>
         
-        <div className='flex px-12 py-2 rounded-xl  bg-[#49BBBD] mt-3 sm:mt-0 '>
-        <svg className="h-8 w-8"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 7c-3 0-4 3-4 5.5 0 3 2 7.5 4 7.5 1.088-.046 1.679-.5 3-.5 1.312 0 1.5.5 3 .5s4-3 4-5c-.028-.01-2.472-.403-2.5-3-.019-2.17 2.416-2.954 2.5-3-1.023-1.492-2.951-1.963-3.5-2-1.433-.111-2.83 1-3.5 1-.68 0-1.9-1-3-1z" />  <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" /></svg>
-        <button>IOS APP</button>
+        <div className='flex sm:px-14 justify-center ml-3 sm:ml-0 py-4 h-14 md:w-60 rounded-xl text-center bg-[#49BBBD] mt-3 font-bold md:mt-0 '>
+          <img src={apple} alt="" className='' />
+        {/* <svg className="h-8 w-8"  width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">  <path stroke="none" d="M0 0h24v24H0z"/>  <path d="M9 7c-3 0-4 3-4 5.5 0 3 2 7.5 4 7.5 1.088-.046 1.679-.5 3-.5 1.312 0 1.5.5 3 .5s4-3 4-5c-.028-.01-2.472-.403-2.5-3-.019-2.17 2.416-2.954 2.5-3-1.023-1.492-2.951-1.963-3.5-2-1.433-.111-2.83 1-3.5 1-.68 0-1.9-1-3-1z" />  <path d="M12 4a2 2 0 0 0 2 -2a2 2 0 0 0 -2 2" /></svg> */}
+        <button className=''>IOS APP</button>
         </div>
-       
 
       </div>
     </div>

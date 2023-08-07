@@ -287,12 +287,12 @@ const MeetingPage = () => {
 
 <div className='grid grid-cols-1 gap-6 sm:grid-cols-2'>
   <div className='p-4 rounded-xl shadow-2xl'>
-    <img className='object-cover w-full h-[250px] 2xl:h-[150px] rounded-2xl' src={tablet} alt="" />
+    <img className='object-cover w-full h-[200px] 2xl:h-[150px] rounded-2xl' src={tablet} alt="" />
     <p className='text-2xl font-medium'>All Benefits of PLUS</p>
     <p className='text-3xl font-semibold text-[#49BBBD]'>$24</p>
   </div>
   <div className='p-4 rounded-xl shadow-2xl'>
-    <img className='object-cover w-full h-[250px] 2xl:h-[150px] rounded-2xl' src={Rectangle} alt="" />
+    <img className='object-cover w-full h-[200px] 2xl:h-[150px] rounded-2xl' src={Rectangle} alt="" />
     <p className='text-2xl font-medium'>All Benefits of PLUS</p>
     <p className='text-3xl text-[#49BBBD] font-bold'>$24</p>
   </div>

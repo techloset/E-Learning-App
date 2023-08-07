@@ -14,7 +14,7 @@ const CheckOut = () => {
         {/* ===================checkout======================= */}
         <div className='px-10 shadow-xl  2xl:w-[750px] rounded-2xl '>
         <h1 className='font-semibold text-2xl md:text-4xl'>Checkout</h1><br />
-        <p className='font-semibold  sm:text-xl'>Cart Type</p><br />
+        <p className='font-semibold text-[#5B5B5B] sm:text-xl'>Cart Type</p><br />
         <div className='flex md:flex-row flex-col gap-y-2'>
           
 
@@ -96,7 +96,7 @@ const CheckOut = () => {
             <br />
           </div>
             <br />
-          <hr className='border-gray-500 border-2 ' />
+          <hr className=' bg-[#5B5B5B] h-[1.5px]' />
           <br />
           <div className='flex flex-col md:flex-row mx-2 '>
             <img className='w-[160px] h-[100px] rounded-xl ' src={search} alt='' />
@@ -108,7 +108,7 @@ const CheckOut = () => {
             <br />
           </div>
             <br />
-          <hr className='border-gray-500 border-2  ' />
+          <hr className=' bg-[#5B5B5B] h-[1.5px]' />
          
 
           <div className='flex justify-between mt-3 text-[#5B5B5B] font-semibold '> 
@@ -116,7 +116,7 @@ const CheckOut = () => {
           <p>$51.38</p>
           </div>
 
-          <hr className='border-gray-500 border-2 mt-3 ' />
+          <hr className='bg-[#5B5B5B] h-[1.5px] mt-3 ' />
         
 
           <div className='flex justify-between mt-3 text-[#5B5B5B] font-semibold'> 
@@ -124,14 +124,14 @@ const CheckOut = () => {
           <p>0%</p>
           </div>
 
-          <hr className='border-gray-500 border-2 mt-3' />
+          <hr className='bg-[#5B5B5B] h-[1.5px] mt-3' />
         
           <div className='flex justify-between mt-3 text-[#5B5B5B] font-semibold'> 
           <p>TAX</p>
           <p>5</p>
           </div>
         
-          <hr className='border-gray-500 border-2 mt-3' />
+          <hr className='bg-[#5B5B5B] h-[1.5px] mt-3' />
         
           <div className='flex justify-between mt-3 font-semibold'> 
           <p>Total</p>
@@ -150,7 +150,7 @@ const CheckOut = () => {
       <div className=' '>
           <div className='flex md:flex-row flex-col justify-between'>
               <p className='md:text-3xl text-xl font-medium'>Top Education offers and deals are listed here</p>
-              <p className='text-[#49BBBD] text-xl font-medium '>See all</p>
+              <p className='text-[#49BBBD] text-xl font-bold  '>See all</p>
           </div>
           <br /><br />
 

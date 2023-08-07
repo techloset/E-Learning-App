@@ -90,7 +90,7 @@ const CardsWithClicks = () => {
                   <br />
                   <p className='font-bold text-xl '>AWS Certified solutions Architect</p>
                   <br />
-                  <p>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+                  <p className='text-[#696984]'>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
               <br />
               <div className='flex justify-between'>
               <div className='flex'>

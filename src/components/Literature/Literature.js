@@ -221,7 +221,7 @@ Courses
            <img className='rounded-xl w-[450px] h-[518px] ' src={card.img} alt="" />
            <br />
 <div className='flex justify-between'>
-  <h1 className='text-[25px] '>All Benefits Of Plus </h1>
+  <h1 className='text-[25px] '>All Benefits Of PLUS </h1>
   <h1 className='text-3xl font-extrabold text-[#49BBBD] '>$24</h1>
 </div>
           </div>

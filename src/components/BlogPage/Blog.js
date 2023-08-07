@@ -27,7 +27,7 @@ const bloglist=[
     },
 ]
 const Blog = () => {
-    const [viewsOpen, setViewsOpen] = useState(false);
+    const [viewsOpen, setViewsOpen] = useState(true);
  
 
   const toggleViews = () => {
@@ -120,9 +120,9 @@ const Blog = () => {
                 <div className='' >
                     <p className='text-black text-2xl ' >  By Themadbrains in <span className='text-[#49BBBD]'>inspiration</span> </p>
                     <br />
-                    <h1 className='font-semibold text-2xl md:text-3xl xl:text-4xl text-[#2F327D]'>Why Swift UI Should Be on the Radar of Every Mobile Developer</h1>
+                    <h1 className='font-semibold text-2xl md:text-3xl xl:text-4xl text-[#2F327D]'>Why Swift UI Should Be on the <br /> Radar of Every Mobile <br /> Developer</h1>
                     <br />
-                    <p className=' text-lg xl:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p className=' text-lg xl:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempos Lorem ipsum dolor sitamet, <br /> consectetur adipiscing elit, sed do eiusmod tempor</p>
                     <br />
                     <button className='bg-[#49BBBD] text-white rounded-2xl px-11 py-4 text-base font-bold'>Start learning now</button>
                 </div>
@@ -141,8 +141,8 @@ const Blog = () => {
       <div className='lg:mx-16 mx-12 xl:mx-20 flex-col ' style={{fontFamily:"poppins"}}>
     
         <div className='flex justify-between'>
-        <div className='font-medium text-xl md:text-[30px] '>Reading blog list</div>
-        <div className='text-[#49BBBD] text-[20px] font-bold'>See all</div>
+        <div className='font-bold text-xl md:text-[30px] '>Reading blog list</div>
+        {/* <div className='text-[#49BBBD] text-[20px] font-bold'>See all</div> */}
         </div>
         <br /> <br />
 
@@ -152,7 +152,7 @@ const Blog = () => {
       <div className="relative w-full " key={index}>
         <img src={val.img} className='w-full lg:w-[300px] lg:h-[260px] rounded-xl' alt='myImage' />
         <div className='absolute  top-3/4 left-1/2 transform -translate-x-1/2 -translate-y-1/2'>
-          <button className="text-2xl bg-[#FFFFFFB2] text-black rounded-xl py-2 px-12  text-center justify-center mx-auto  font-bold">{val.title}</button>
+          <button className="text-2xl bg-[#FFFFFFB2] text-black rounded-xl py-2 px-12  h-14 w-56 text-center justify-center mx-auto  font-bold">{val.title}</button>
         </div>
       </div>
     ))}
@@ -187,13 +187,13 @@ const Blog = () => {
             </div>
             
             {card.showMore ? (
-            <p>{card.descriptionmore}</p>
+            <p className='text-[#696984] '>{card.descriptionmore}</p>
           ) : (
-            <p>{card.descriptionless}</p>
+            <p className='text-[#696984] '>{card.descriptionless}</p>
           )}
           <br />
         <div className="flex items-center justify-between">
-          <button className='underline' onClick={() => handleToggleReadMore(index)}>
+          <button className='underline text-[#696984] ' onClick={() => handleToggleReadMore(index)}>
             {card.showMore ? 'Read Less' : 'Read More'}
           </button>
           <div className="text-gray-600">
@@ -212,7 +212,7 @@ const Blog = () => {
 
 
             {/* view button  */}
-            {viewsOpen && <span className="ml-1">{card.views}</span>}
+            {viewsOpen && <span className="ml-1 text-[#696984] ">{card.views}</span>}
             
           </div>
           </div>

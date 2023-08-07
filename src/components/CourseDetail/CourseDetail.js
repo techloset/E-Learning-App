@@ -7,6 +7,7 @@ import blogdetail from "../../images/blogdetail.png"
 import { useRef , useState } from 'react'
 import play from "../../images/play.png"
 import card from "../../images/card.png"
+import everything from "../../images/everything.png"
 
 const CourseDetail = () => {
     const [showButton, setShowButton] = useState(true);
@@ -406,7 +407,7 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
 
        <br /><br /><br /><br />
 {/* ===================================everything you can do==================================== */}
-         <div className='mx-10 md:mx-28 grid lg:grid-cols-2 gap-10 justify-between'>
+         {/* <div className='mx-10 md:mx-28 grid lg:grid-cols-2 gap-10 justify-between'>
             <div className=" items-center  xl:mt-5">
               
              
@@ -417,6 +418,52 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
       <p className='xl:text-lg mt-5'>
       TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.{' '} <br />
         {showMore ? (
+          <>
+            Suspendisse efficitur fringilla consequat. Maecenas condimentum dictum mauris, id sagittis lacus dapibus eu. Nam convallis diam sed nisi condimentum euismod. Phasellus vitae diam turpis. Mauris consequat gravida pharetra. Integer sollicitudin rutrum nisl id tempor.
+            <button className=" float-left underline" onClick={handleToggleText}><br />
+              Learn Less
+            </button>
+          </>
+        ) : (
+          <button className=" underline" onClick={handleToggleText}><br />
+            Learn More
+          </button>
+        )}
+      </p>
+      <br />
+     
+    </div>
+
+<div className="relative  ">
+      
+      <img src={play} alt="" />
+    </div>
+         </div> */}
+         
+
+
+
+         <div className=' grid lg:grid-cols-2 mx-10 md:mx-20 gap-10 justify-between'>
+            <div className=" items-center   xl:mt-10">
+
+            {/* <div className="relative flex items-center">
+  <div className="bg-[#33EFA0] h-12 w-12 rounded-full flex items-center justify-center">
+    <span className="text-white text-2xl font-bold">Eve</span>
+  </div>
+  <h1 className="ml-4 text-[#2F327D] text-2xl xl:text-4xl font-bold">
+    rything you can do in a physical classroom,{' '}
+    <span className="text-[#00CBB8]">you can do with TOTC</span>
+  </h1>
+</div> */}
+
+              
+              <div className='bg-[#33EFA0] text-2xl xl:text-4xl font-bold h-12 text-[#2F327D]  absolute transition  w-12   rounded-full '> Eve</div>
+<h1 className='text-[#2F327D] text-2xl xl:text-4xl font-bold '>Everything you can do in a physical <br />classroom, <span className='text-[#00CBB8]'> you can do with TOTC</span></h1>
+      
+     
+      <p className='xl:text-lg w-4/5 mt-5'>
+      TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.{' '} <br />
+      {showMore ? (
           <>
             Suspendisse efficitur fringilla consequat. Maecenas condimentum dictum mauris, id sagittis lacus dapibus eu. Nam convallis diam sed nisi condimentum euismod. Phasellus vitae diam turpis. Mauris consequat gravida pharetra. Integer sollicitudin rutrum nisl id tempor.
             <button className=" float-left underline" onClick={handleToggleText}><br />
@@ -449,9 +496,31 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
       >
         <source src={tomjerry} type="video/mp4" />
       </video> */}
-      <img src={play} alt="" />
+      <div className=' '>
+      <img src={everything} alt="" />
+
+      </div>
+    
+
+{/* <div className="relative">
+  <div className="absolute top-0 left-0 -ml-16 -mt-16 rounded-xl bg-[#23BDEE]  w-[128px] h-[128px]"></div>
+  <img src={play} className='' alt="" />
+  <div className="absolute bottom-0 right-0 -mr-16  -mb-16 rounded-xl bg-[#33EFA0] w-[231px] h-[231px]"></div>
+</div> */}
+
+
+{/* <div className="relative">
+  <img src={play} alt=""  className='z-30'/>
+  <div className="absolute top-0 left-0 -ml-16 -mt-16 rounded-xl bg-[#23BDEE] w-[128px] translate-x-10 h-[128px]"></div>
+  <div className="absolute bottom-0 right-0 -mr-16 -mb-16 rounded-xl bg-[#33EFA0] w-[231px] h-[231px]"></div>
+</div> */}
+
+
+
     </div>
          </div>
+
+
 
 
          <br /><br /><br />

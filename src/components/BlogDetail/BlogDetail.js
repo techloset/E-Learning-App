@@ -7,7 +7,7 @@ import card3 from "../../images/card2.png"
 
 const BlogDetail = () => {
 
-    const [viewsOpen, setViewsOpen] = useState(false);
+    const [viewsOpen, setViewsOpen] = useState(true);
  
 
     const toggleViews = () => {
@@ -169,17 +169,17 @@ TOTC is a platform that allows educators to create online classes whereby they c
             </div>
             
             {card.showMore ? (
-            <p>{card.descriptionmore}</p>
+            <p className='text-[#696984] '>{card.descriptionmore}</p>
           ) : (
-            <p>{card.descriptionless}</p>
+            <p className='text-[#696984] '>{card.descriptionless}</p>
           )}
           <br />
         <div className="flex items-center justify-between">
-          <button className='underline' onClick={() => handleToggleReadMore(index)}>
+          <button className='underline text-[#696984] ' onClick={() => handleToggleReadMore(index)}>
             {card.showMore ? 'Read Less' : 'Read More'}
           </button>
           <div className="text-gray-600">
-          <div className="text-gray-600 flex items-center">
+          <div className="text-gray-600  flex items-center">
             <button className="focus:outline-none" onClick={(index)=>toggleViews(index)}>
               {viewsOpen ? (
                 <svg className="h-5  w-5 text-[#49BBBD] hover:text-gray-700"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round">  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z" />  <circle cx="12" cy="12" r="3" /></svg>
@@ -195,7 +195,7 @@ TOTC is a platform that allows educators to create online classes whereby they c
 
 
             {/* view button  */}
-            {viewsOpen && <span className="ml-1">{card.views}</span>}
+            {viewsOpen && <span className="ml-1 text-[#696984] ">{card.views}</span>}
             
           </div>
           </div>
