@@ -27,7 +27,7 @@ const Explore = () => {
        <p className='flex text-2xl font-bold'> <svg xmlns="http://www.w3.org/2000/svg" className='  w-5 h-6 mr-3 mt-2' viewBox="0 0 24 24"><path d="M23.92,11.24a12.33,12.33,0,0,0-9-10.37,9.82,9.82,0,0,0-5.78,0A12.47,12.47,0,0,0,.36,9.75,11.88,11.88,0,0,0,3.52,21.13a2.5,2.5,0,0,0,3.08.36,1.5,1.5,0,0,0,.26-2.33l-.81-.81a1,1,0,0,1,0-1.42,1.1,1.1,0,0,1,1.6-.19c1.41,1.41,5.62,5.66,5.62,5.66a4,4,0,0,0,2.82,1.18A3.68,3.68,0,0,0,18,23.05,12,12,0,0,0,23.92,11.24Zm-9.44,7.62a2.49,2.49,0,0,1,0-3.53,2.54,2.54,0,0,1,3.53,0,2.5,2.5,0,0,1-3.53,3.53ZM14.25,7.2a2,2,0,0,1,2-2h0a2,2,0,1,1-2,2Zm3.69,6h0a1.5,1.5,0,0,1,2.12-2.12,1.5,1.5,0,1,1-2.12,2.12ZM11.65,4.72a2,2,0,1,1-2.83,0A2,2,0,0,1,11.65,4.72Z" fill="#000000"></path></svg> Lorem ipsum</p>
         <p className='text-[#00BCD4] text-2xl font-bold'>SEE ALL →</p>
       </div>
-      <div>
+      <div className='relative z-10'>
         <br /> <br /> <br /> <br /> <br /> <br /> 
 
 
@@ -36,9 +36,9 @@ const Explore = () => {
 <div className='flex-col flex 2xl:flex-row justify-between'>
 
 
-<div className='grid xm:grid-cols-3 md:grid-cols-6 lg:grid-cols-9 gap-[100px] w-[60%] '>
+<div className='grid xm:grid-cols-3 md:grid-cols-6  lg:grid-cols-9 gap-[100px] w-[60%] '>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3  text-white px-4  h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-orange-600 px-6 py-2 rounded-xl ' >
                     Ut Sed Eros
@@ -46,7 +46,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#FF8374] px-6 py-2 rounded-xl ' >
                 Curabitur Egestas
@@ -55,7 +55,7 @@ const Explore = () => {
         </div>
 
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#B45A1B] px-6 py-2 rounded-xl ' >
                 Quisque Conseq…
@@ -63,7 +63,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#FFB300] px-6 py-2 rounded-xl ' >
                     Ut Sed Eros
@@ -71,7 +71,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#C583FF] px-6 py-2 rounded-xl ' >
                 Cras Convallis
@@ -79,7 +79,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#00A8FF] px-6 py-2 rounded-xl ' >
                 Vestibulum fauci…
@@ -87,7 +87,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#6DB4A7] px-6 py-2 rounded-xl ' >
                 Vestibulum faucibu
@@ -101,7 +101,7 @@ const Explore = () => {
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
 
-<div className='block transform  sm:h-[430px]   sm:w-[540px] md:w-full'>
+<div className='block transform  sm:h-[430px] 2xl:-mt-4  sm:w-[540px] md:w-full'>
 <div class="flex flex-col sm:flex-row justify-between  -mt-28   sm:w-[500px]  mx-10 p-6 bg-white border-4 border-[#347a83a7] rounded-3xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
     <img src={recipe} className='rounded-3xl  ' alt="" />
     <div>
@@ -126,6 +126,8 @@ const Explore = () => {
 
 </div>
 </div>
+
+<div className='h-16 -mt-64 hidden xl:block relative w-full bg-black rounded-xl opacity-5 '></div>
 {/* end of the  lorem ipsum in the explore courses */}
 
 {/* <img src="https://s3-alpha-sig.figma.com/img/4558/d107/8ec36ee1ee7a50f8965a2c32bfdfb59b?Expires=1691366400&Signature=VGgJhg0qTQUylqNafGs7bWWuVYntJLJIQRAQhH5irFTcYSooaLGxEx-uwhzx9HYLc9K-9bzYUlCKOJz-8nAMG9cEaRN56Uwjvz4DawGb0NmFaLCYr7fnMDgd3OTQLTeFpfrdTLbU4Eexbttj27fQjzCC9XdlMQ~S9PzeEepkzhsO9pAV6QmnmN31aFaJoiQ3Yjay3E~Z3phDgQtv8G9K0Secq9X7nooAdqgwuqANqhyzQFZxuvaWXmbuPmpIevX39D~kWKUZYYNcClpsakxYD8EPkyoBuz6lVVFH7-4YfQ1hP2-MQo1bmiP3400k7StlkSe3LyNSK2X1JjGw~zKXDA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4" alt="" /> */}
@@ -136,7 +138,7 @@ const Explore = () => {
         <p className='text-[#00BCD4] text-2xl font-bold'>SEE ALL →</p>
       </div>
       
-      <div>
+      <div className='relative z-10'>
         <br /> <br /> <br /> <br /> <br /> <br /> <br /> 
 
 
@@ -147,7 +149,7 @@ const Explore = () => {
 
 <div className='grid sm:grid-cols-4 w-[10%] gap-[95px]   '>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  text-white rounded-xl py-3 px-4  h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-orange-600 px-6 py-2 rounded-xl ' >
                     Ut Sed Eros
@@ -155,7 +157,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  text-white rounded-xl py-3 px-4  h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#FF8374] px-6 py-2 rounded-xl ' >
                 Curabitur Egestas
@@ -164,7 +166,7 @@ const Explore = () => {
         </div>
 
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  text-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#B45A1B] px-6 py-2 rounded-xl ' >
                 Quisque Conseq…
@@ -172,7 +174,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  text-white rounded-xl py-3 px-4  h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#FFB300] px-6 py-2 rounded-xl ' >
                     Ut Sed Eros
@@ -182,10 +184,11 @@ const Explore = () => {
 </div>
 
 
+
 <div className='xl:hidden'>
 <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 </div>
-{/* block transform  sm:h-[430px]   sm:w-[684px] md:w-full */}
+
 <div className='block transform px-3 '>
     <div class="flex flex-col sm:flex-row justify-between w-[240px]   sm:w-[500px] lg:w-[55%] xl:w-[90%] 2xl:w-[110%] sm:h-[140%] -mt-28   mx-10 p-6 bg-white border-4 border-[#e33737a7] rounded-3xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
     <img src={recipe} className='rounded-3xl  ' alt="" />
@@ -215,7 +218,7 @@ const Explore = () => {
 
   <div className='grid sm:grid-cols-5 gap-[95px] w-[10%] '>
 
-  <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px] '>
+  <div className='book text-center  bg-white  rounded-xl  text-white py-3 px-4  h-20 w-[300px] '>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#C583FF] px-6 py-2 rounded-xl ' >
                 Cras Convallis
@@ -223,7 +226,7 @@ const Explore = () => {
             </div> 
         </div> 
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  text-white rounded-xl py-3 px-4  h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#00A8FF] px-6 py-2 rounded-xl ' >
                 Vestibulum fauci…
@@ -231,7 +234,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  text-white rounded-xl py-3 px-4  h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#6DB4A7] px-6 py-2 rounded-xl ' >
                 Vestibulum faucibu
@@ -245,10 +248,11 @@ const Explore = () => {
 
 </div>
 
-
-<div className='lg:hidden'>
+<div className='h-14 -mt-14  hidden xl:block relative w-full bg-black rounded-xl opacity-5 '>
 
 </div>
+
+
 
 <div className='hidden sm:block md:hidden '><br /> <br /> <br /> <br /> <br /> <br /> <br />  </div>
      
@@ -266,12 +270,13 @@ const Explore = () => {
         
 
 
+
     {/* =======================================3rd part============================ */}
       
-<div className=' flex-col flex 2xl:flex-row justify-between'>
+<div className='relative z-10 flex-col flex 2xl:flex-row justify-between'>
 
 
-<div className='grid grid-cols-2 mt-36 sm:mt-0'>
+<div className='grid grid-cols-2 mt-36 sm:mt-0 text-white'>
         <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-orange-600 px-6 py-2 rounded-xl ' >
@@ -283,7 +288,7 @@ const Explore = () => {
 
 
 <div className=''><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /></div>
-<div className='block transform md:w-full'>
+<div className='block transform md:w-full 2xl:-mt-6'>
 <div className="flex flex-col sm:flex-row justify-between  -mt-28 sm:w-[500px] 2xl:w-[105%]  mx-10 p-6 bg-white border-4 border-[#347a83a7] rounded-3xl shadow hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700">
     <img src={recipe} className='rounded-3xl  ' alt="" />
     <div>
@@ -313,7 +318,7 @@ const Explore = () => {
   <div className='grid  sm:grid-cols-2  lg:grid-cols-7 '>
 
 
-  <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+  <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#FF8374] px-6 py-2 rounded-xl ' >
                 Curabitur Egestas
@@ -322,7 +327,7 @@ const Explore = () => {
         </div>
 
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white  h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#B45A1B] px-6 py-2 rounded-xl ' >
                 Quisque Conseq…
@@ -330,7 +335,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white  h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#FFB300] px-6 py-2 rounded-xl ' >
                     Ut Sed Eros
@@ -338,7 +343,7 @@ const Explore = () => {
             </div> 
         </div>
 
-  <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px] '>
+  <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white h-20 w-[300px] '>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#C583FF] px-6 py-2 rounded-xl ' >
                 Cras Convallis
@@ -346,7 +351,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#00A8FF] px-6 py-2 rounded-xl ' >
                 Vestibulum fauci…
@@ -354,7 +359,7 @@ const Explore = () => {
             </div> 
         </div>
 
-        <div className='book text-center  bg-white  rounded-xl py-3 px-4  h-20 w-[300px]'>
+        <div className='book text-center  bg-white  rounded-xl py-3 px-4  text-white h-20 w-[300px]'>
             <div className='bg-green-300 px-6 py-2 rounded-xl'>
                 <div  className='bg-[#6DB4A7] px-6 py-2 rounded-xl ' >
                 Vestibulum faucibu
@@ -366,6 +371,7 @@ const Explore = () => {
         
 
 </div>
+<div className='h-16 -mt-32 hidden xl:block relative w-full bg-black rounded-xl opacity-5 '></div>
 
 </div>
 

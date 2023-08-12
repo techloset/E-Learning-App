@@ -116,25 +116,25 @@ const Success = () => {
         <div className='sm:mx-16 mx-10 '>
             <h1 className='text-[#010514] text-4xl lg:text-5xl font-bold justify-center text-center'>Our Success</h1>
             <br />
-            <p className=' text-center justify-center mx-auto  md:w-3/4 lg:w-2/3 xl:w-1/2'>Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. </p>
+            <p className=' text-center font-buenos-aires-trial justify-center mx-auto  text-lg md:w-3/4 lg:w-2/3 xl:w-1/2'  >Ornare id fames interdum porttitor nulla turpis etiam. Diam vitae sollicitudin at nec <br /> nam et pharetra gravida. Adipiscing a quis ultrices eu ornare tristique vel nisl orci. </p>
             <br /><br />
 
 
             <div className='flex flex-col sm:flex-row justify-between text-center '>
                 <div className='xl:text-8xl md:text-3xl text-2xl lg:text-5xl flex flex-col  text-transparent  bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400 '>
-                    15K+  <span className='xl:text-3xl text-lg md:text-xl lg:text-2xl text-[#010514]'>Students</span>
+                    15K+  <span className='xl:text-3xl text-lg md:text-xl lg:text-2xl text-[#010514] font-buenos-aires-trial'>Students</span>
                 </div>
                 <div className='xl:text-8xl md:text-3xl text-2xl lg:text-5xl flex flex-col  text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400'>
-                    75% <span className='xl:text-3xl text-lg md:text-xl lg:text-2xl text-[#010514] '>Total success</span>
+                    75% <span className='xl:text-3xl text-lg md:text-xl lg:text-2xl text-[#010514] font-buenos-aires-trial'>Total success</span>
                 </div>
                 <div className='xl:text-8xl md:text-3xl text-2xl lg:text-5xl flex flex-col  text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400'>
-                    35 <span className='xl:text-3xl text-lg md:text-xl lg:text-2xl text-[#010514] '>Main questions</span>
+                    35 <span className='xl:text-3xl text-lg md:text-xl lg:text-2xl text-[#010514] font-buenos-aires-trial'>Main questions</span>
                 </div>
                 <div className='xl:text-8xl md:text-3xl text-2xl lg:text-5xl flex flex-col  text-transparent  bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400'>
-                    26 <span className='xl:text-3xl text-lg md:text-xl lg:text-2xl text-[#010514] '>Chief experts</span>
+                    26 <span className='xl:text-3xl text-lg md:text-xl lg:text-2xl text-[#010514] font-buenos-aires-trial'>Chief experts</span>
                 </div>
                 <div className='xl:text-8xl md:text-3xl text-2xl lg:text-5xl flex flex-col  text-transparent  bg-clip-text bg-gradient-to-r from-blue-500 to-teal-400'>
-                    16 <span className='xl:text-3xl text-lg md:text-xl lg:text-2xl text-[#010514] '>Years of experience</span>
+                    16 <span className='xl:text-3xl text-lg md:text-xl lg:text-2xl text-[#010514] font-buenos-aires-trial'>Years of experience</span>
                 </div>
             </div>
 
@@ -142,7 +142,7 @@ const Success = () => {
 <br /><br /><br /><br />
 <h1 className='text-[#2F327D] text-3xl lg:text-4xl font-bold justify-center text-center'>All-In-One <span className='text-[#00CBB8]'>Cloud Software.</span></h1>
             <br />
-            <p className=' text-center justify-center mx-auto w-3/4 lg:w-2/3 xl:w-1/2'>TOTC is one powerful online software suite that combines all the tools needed to run a successful school or office.</p>
+            <p className=' text-[#696984] text-center justify-center mx-auto w-3/4 lg:w-2/3 xl:w-1/2'>TOTC is one powerful online software suite that combines all the tools <br /> needed to run a successful school or office.</p>
             <br /><br />
   <br />
 <br />
@@ -166,10 +166,10 @@ const Success = () => {
   </div>
 </div> */}
 
-<div className=" items-center justify-center  bg-white ">
+<div className=" items-center justify-center text-[#696984]   bg-white ">
 <div className="relative grid md:grid-cols-2 xl:grid-cols-3 gap-14">
   {successPoints.map((value, index )=>(
-  <div key={index} className="relative px-4 rounded-xl py-12 shadow-xl rounded-t-lg sm:px-8 md:px-10 dark:bg-gray-900">
+  <div key={index} className="relative px-4 rounded-xl py-12 shadow-xl rounded-t-lg sm:px-8 md:px-10 ">
 
     <div style={{backgroundColor:value.color}} className="w-20 h-20 mb-2 mx-auto   rounded-full absolute -top-8 left-1/2 transform -translate-x-1/2 text-white flex items-center justify-center ">
       <div className='mx-auto  justify-center text-center flex items-center text-4xl font-bold '>
@@ -191,19 +191,20 @@ const Success = () => {
 <br /> <br /><br /> <br /><br />
 <h1 className='text-[#2F327D] text-3xl lg:text-4xl font-bold justify-center text-center'>What is <span className='text-[#00CBB8]'>TOTC?</span></h1>
 <br />
-<p className='xl:w-2/3  md:w-3/4 lg:w-3/4 justify-center text-center mx-auto'>TOTC is a platform that allows educators to create online classes whereby they can store the course materials online; manage assignments, quizzes and exams; monitor due dates; grade results and provide students with feedback all in one place.</p>
+<p className='xl:w-2/3 text-[#696984]  md:w-3/4 lg:w-3/4 justify-center text-center mx-auto'>TOTC is a platform that allows educators to create online classes whereby they can <br /> store the course materials online; manage assignments, quizzes and exams; monitor <br />
+ due dates; grade results and provide students with feedback all in one place.</p>
 <br /><br />
 
    <div className='grid lg:grid-cols-2 gap-16 '>
     <div className="flex items-center w-full  justify-center">
-        <img src={card} alt="CardImage" className="" />
+        <img src={card} alt="CardImage" className="xl:h-[400px]" />
         <div className='absolute'>
            <h2 className="text-2xl text-white text-center font-bold mb-2 ">FOR INSTRUCTORS</h2><br />
         <button className="text-[22px] border-white border-2 rounded-full px-8 py-2  text-white hover:bg-blue-600">Start a class today</button>
         </div>
     </div>
     <div className="flex items-center w-full  justify-center">
-        <img src={card2} alt="CardImage" className="" />
+        <img src={card2} alt="CardImage" className="xl:h-[400px]" />
         <div className='absolute'>
            <h2 className="text-2xl text-white text-center font-bold mb-2 ">FOR STUDENTS</h2><br />
         <button className="text-[22px] rounded-full px-8 py-2   text-white bg-[#23BDEEE5]">Enter access code</button>
@@ -272,15 +273,20 @@ const Success = () => {
 </div> */}
 
               
-              <div className='bg-[#33EFA0] text-2xl xl:text-4xl font-bold h-12 text-[#2F327D]  absolute transition  w-12   rounded-full '> Eve</div>
-<h1 className='text-[#2F327D] text-2xl xl:text-4xl font-bold '>Everything you can do in a physical classroom, <span className='text-[#00CBB8]'> you can do with TOTC</span></h1>
+              <div className='bg-[#33EFA0] text-2xl xl:text-4xl font-bold h-12 text-[#2F327D]  absolute transition  w-12   rounded-full '> Ever</div>
+<h1 className='text-[#2F327D] text-2xl xl:text-4xl font-bold relative z-10'>Everything you can do in a physical classroom, <span className='text-[#00CBB8]'> you can do with TOTC</span></h1>
       
      
-      <p className='xl:text-lg w-3/4 mt-5'>
-      TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.{' '} <br />
+      <p className='xl:text-lg 2xl:w-3/4   w-11/12 text-[#696984]  mt-5'>
+      TOTC’s school management software helps traditional and online schools manage scheduling, attendance 
+      <div className='bg-[#33EFA0] text-2xl xl:text-4xl font-bold h-6 mx-28 right-0 lg:left-1/3  absolute transition  w-6  rounded-full '> </div>
+
+      
+      
+        , payments and virtual classrooms all in one secure cloud-based system.{' '} <br />
         {showMore ? (
           <>
-            Suspendisse efficitur fringilla consequat. Maecenas condimentum dictum mauris, id sagittis lacus dapibus eu. Nam convallis diam sed nisi condimentum euismod. Phasellus vitae diam turpis. Mauris consequat gravida pharetra. Integer sollicitudin rutrum nisl id tempor.
+            Suspendisse efficitur fringilla consequat. Maecenas condimentum dictum mauris, id sagittis lacus dapibus eu. Nam convallis diam sed nisi condimentum euismod. Phasellus vitae diam turpis. Mauris consequat gravida pharetra. Integer sollicitudin  nisl id tempor.
             <button className=" float-left underline" onClick={handleToggleText}><br />
               Learn Less
             </button>
@@ -341,13 +347,13 @@ const Success = () => {
         {/* -------------------------------our Features----------------------------------- */}
 <h1 className='text-[#2F327D] text-3xl lg:text-4xl font-bold text-center justify-center '>Our<span className='text-[#00CBB8]'> Features</span></h1>
             <br />
-            <p className=' text-xl xl:text-2xl text-center justify-center mx-auto '>This very extraordinary feature, can make learning activities more efficient </p>
+            <p className=' text-xl xl:text-2xl text-center justify-center mx-auto text-[#696984] '>This very extraordinary feature, can make learning activities more efficient </p>
             <br /><br />
 
 
 {/* ==========================user interface designed for the classroom ================================== */}
 
-<div className='grid lg:grid-cols-2 xl:gap-12  gap-6  '>        
+<div className='grid lg:grid-cols-2 2xl:gap-12 xl:gap-x-28  gap-6  '>        
     {/* <div className="  bg-gray-100 w-[60%] rounded-3xl shadow-xl overflow-hidden ">
       <div className="md:flex   justify-between ">
         <div className='my-9 mx-12'>
@@ -430,7 +436,7 @@ const Success = () => {
   <rect x="14.7734" y="14.1819" width="11.8182" height="11.8182" rx="2" fill="#F48C06"/>
 </svg>
           </div>
-          <p className=' 2xl:w-3/5  2xl:mr-24 text-lg '>Teachers don’t get lost in the grid view and have a dedicated Podium space.</p>
+          <p className=' 2xl:w-3/5 w-3/4  2xl:mr-24 text-lg text-[#696984] '>Teachers don’t get lost in the grid view  and have a dedicated Podium space.</p>
         </div><br /><br />
 
         <div className='flex justify-between '>
@@ -440,7 +446,7 @@ const Success = () => {
   <rect width="21.2245" height="21.2245" rx="2" fill="#F48C06"/>
 </svg>
           </div>
-          <p className=' 2xl:w-3/5  2xl:mr-24 text-lg '>TA’s and presenters can be moved to the front of the class.</p>
+          <p className=' 2xl:w-3/5 w-3/4 2xl:mr-24 text-lg text-[#696984] '>TA’s and presenters can be moved to the front of the class.</p>
         </div><br /><br />
 
         <div className='flex -between '>
@@ -449,7 +455,7 @@ const Success = () => {
   <path d="M4.5 11.375C6.15469 11.375 7.5 9.91758 7.5 8.125C7.5 6.33242 6.15469 4.875 4.5 4.875C2.84531 4.875 1.5 6.33242 1.5 8.125C1.5 9.91758 2.84531 11.375 4.5 11.375ZM25.5 11.375C27.1547 11.375 28.5 9.91758 28.5 8.125C28.5 6.33242 27.1547 4.875 25.5 4.875C23.8453 4.875 22.5 6.33242 22.5 8.125C22.5 9.91758 23.8453 11.375 25.5 11.375ZM27 13H24C23.175 13 22.4297 13.3605 21.8859 13.9445C23.775 15.0668 25.1156 17.093 25.4062 19.5H28.5C29.3297 19.5 30 18.7738 30 17.875V16.25C30 14.4574 28.6547 13 27 13ZM15 13C17.9016 13 20.25 10.4559 20.25 7.3125C20.25 4.16914 17.9016 1.625 15 1.625C12.0984 1.625 9.75 4.16914 9.75 7.3125C9.75 10.4559 12.0984 13 15 13ZM18.6 14.625H18.2109C17.2359 15.1328 16.1531 15.4375 15 15.4375C13.8469 15.4375 12.7688 15.1328 11.7891 14.625H11.4C8.41875 14.625 6 17.2453 6 20.475V21.9375C6 23.2832 7.00781 24.375 8.25 24.375H21.75C22.9922 24.375 24 23.2832 24 21.9375V20.475C24 17.2453 21.5812 14.625 18.6 14.625ZM8.11406 13.9445C7.57031 13.3605 6.825 13 6 13H3C1.34531 13 0 14.4574 0 16.25V17.875C0 18.7738 0.670312 19.5 1.5 19.5H4.58906C4.88438 17.093 6.225 15.0668 8.11406 13.9445Z" fill="#2F327D"/>
 </svg>
           </div>
-          <p className=' 2xl:w-3/5  2xl:mr-24 text-lg '>Teachers can easily see all students and class data at one time.</p>
+          <p className=' 2xl:w-3/5 w-3/4 2xl:mr-24 text-lg text-[#696984] '>Teachers can easily see all students and class data at one time.</p>
         </div>
       
     </div>
@@ -463,7 +469,7 @@ const Success = () => {
 
 <h1 className='text-[#2F327D] text-2xl xl:text-4xl  font-bold  mt-4 sm:w-2/3'><span className='text-[#00CBB8]'>Tools</span> For Teachers <br /> And Learners</h1><br /><br />
     
-<p className=' w-4/5 text-xl'>Class has a dynamic set of teaching tools built to be deployed and used during class.
+<p className=' w-4/5 text-xl text-[#696984] '>Class has a dynamic set of teaching tools built to be deployed and used during class.
 Teachers can handout assignments in real-time for students to complete and submit.</p>
    
 </div>       
@@ -485,7 +491,7 @@ Teachers can handout assignments in real-time for students to complete and submi
 
 <h1 className='text-[#2F327D] text-3xl xl:text-4xl font-bold  w-2/3 xl:w-1/2'>Assessments,  <br /> <span className='text-[#00CBB8]'>Quizzes</span>, Tests </h1><br /><br />
     
-<p className=' xl:w-3/5'>Easily launch live assignments, quizzes, and tests.
+<p className='text-[#696984]  xl:w-3/5'>Easily launch live assignments, quizzes, and tests.
 Student results are automatically entered in the online gradebook.</p>
    
 </div>  
@@ -498,7 +504,7 @@ Student results are automatically entered in the online gradebook.</p>
 
 <h1 className=' text-3xl xl:text-4xl leading-8 font-bold text-[#00CBB8] mt-4 xl:w-2/3'>Class Management <br /><span className='text-[#2F327D] '>Tools for Educators </span> </h1><br /><br />
     
-<p className='sm:w-4/5'>Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.
+<p className='sm:w-4/5 text-[#696984] '>Class provides tools to help run and manage the class such as Class Roster, Attendance, and more. With the Gradebook, teachers can review and grade tests and quizzes in real-time.
 </p>
    
 </div>       
@@ -509,21 +515,21 @@ Student results are automatically entered in the online gradebook.</p>
     </div>
 <br /><br />
       {/* -----------------------------------------------------------One to one discussions-------------------------------------------------------------- */}
-<div className='grid lg:grid-cols-2 2xl:gap-x-24 2xl:mx-20'> 
+<div className='grid lg:grid-cols-2 gap-16  2xl:gap-x-24 2xl:mx-20'> 
      
      <div className=" ">
        <img src={discussion} alt="" />
      </div>
+
      <div className='mx-4 my-auto  p-4'>
  
  <h1 className='text-[#2F327D] text-3xl xl:text-4xl md:w-2/3 font-bold  mt-4 xl:w-1/2'>One-on-One   <span className='text-[#00CBB8]'>Discussions</span></h1><br /><br />
      
- <p className='lg:w-3/4  '>Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
-    
- </div>  
+ <p className='lg:w-3/4  text-[#696984] '>Teachers and teacher assistants can talk with students privately without leaving the Zoom environment.</p>
  <br /><br /><br />
- 
+ </div> 
      </div>
+
 <button className='text-[#49BBBD] border-2 border-[#49BBBD] rounded-full py-2 sm:py-4 px-5 sm:px-10 mx-auto justify-center text-xl flex sm:text-2xl ' >See more features</button>
        <br /><br />
         </div>

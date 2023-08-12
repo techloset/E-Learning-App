@@ -22,7 +22,7 @@ const CourseCalender1 = () => {
         <div className=' p-6'>
             <p className='text-2xl  font-semibold'>Create new event</p>
             
-            <p className='mt-3'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLorem</p>
+            <p className='mt-3 text-[#5B5B5B] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLorem</p>
             
             <div className='bg-white mt-8 rounded-xl p-6'>
                 <label className='text-2xl  font-semibold' htmlFor="EventName">Event Name</label> 

@@ -114,7 +114,7 @@ const CourseCalender2 = () => {
         <div className='bg-[#9DCCFF] bg-opacity-20 p-6'>
             <p className='text-2xl  font-semibold'>Share and Refer</p>
             <br />
-            <p>Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLoremLorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem
+            <p className='text-[#5B5B5B] '>Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLoremLorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem
 <br /> eiusmodLorem dolor sit amet, consectetur adipiscing</p>
             {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLorem</p> */}
             <br /><br />
@@ -122,9 +122,9 @@ const CourseCalender2 = () => {
             <div className='bg-white rounded-xl p-6'>
                 <SmallCard/>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adi</p>
+                <p  className='text-[#5B5B5B] '>Lorem ipsum dolor sit amet, consectetur adi</p>
                 <br />
-                <div className='bg-[#9DCCFF] bg-opacity-20 p-6 '>
+                <div className='bg-[#9DCCFF] text-[#5B5B5B] bg-opacity-20 p-6 '>
                 Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodL
                 </div>
                 <br />
@@ -134,9 +134,9 @@ const CourseCalender2 = () => {
             <div className='bg-white rounded-xl  p-6'>
                 <SmallCard/>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adi</p>
+                <p className='text-[#5B5B5B]'>Lorem ipsum dolor sit amet, consectetur adi</p>
                 <br />
-                <div className='bg-[#F48C06] bg-opacity-20 p-6 '>
+                <div className='bg-[#F48C06] text-[#5B5B5B] bg-opacity-20 p-6 '>
                 Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodL
                 </div>
                 <br />
@@ -147,9 +147,9 @@ const CourseCalender2 = () => {
             <div className='bg-white rounded-xl p-6'>
                 <SmallCard/>
 
-                <p>Lorem ipsum dolor sit amet, consectetur adi</p>
+                <p className='text-[#5B5B5B]'>Lorem ipsum dolor sit amet, consectetur adi</p>
                 <br />
-                <div className='bg-[#EE645B] bg-opacity-20 p-6 '>
+                <div className='bg-[#EE645B] text-[#5B5B5B] bg-opacity-20 p-6 '>
                 Lorem ipsum dolor sit amet, consectetur adi piscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodL
                 </div>
            

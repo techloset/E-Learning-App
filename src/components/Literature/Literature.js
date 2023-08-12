@@ -108,7 +108,7 @@ const Literature = () => {
 <br />
         <div  className="bg-cover  bg-center mt-5 xl:w-[75%] lg:mt-0 rounded-lg overflow-hidden" style={{ backgroundImage: `${computer}` }}
     >
-      <div className=" bg-white  bg-opacity-80 p-5 h-full flex flex-col justify-end">
+      <div className=" bg-white  bg-opacity-80 p-5 2xl:p-12 h-full flex flex-col justify-end">
       <div className='flex flex-col md:flex-row  justify-between'>
                 <p className='text-3xl font-medium '>John Anderson</p>
                 <button className='bg-[#49BBBD] mt-4  md:mt-0 px-6 py-3 text-white text-2xl font-semibold rounded-xl '>Enroll Now</button>
@@ -116,7 +116,7 @@ const Literature = () => {
               <p className='text-[#2D3436B2] mt-4  md:mt-0'>Assistant Professor at Mcmaster University</p> <br />
               <p className='text-lg mt-4 md:mt-0'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt utlabore et dolore magna aliqua. Ut enum ad minim veniam, quis nostrud</p>
 <br />
-              <div className='flex-col flex lg:flex-row justify-between'>
+              <div className='flex-col flex lg:flex-row justify-between text-[#2D3436CC] '>
                 <div className='flex  justify-between'>
                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className="w-6 h-6">
   <path strokeLinecap="round" strokeLinejoin="round" d="M11.48 3.499a.562.562 0 011.04 0l2.125 5.111a.563.563 0 00.475.345l5.518.442c.499.04.701.663.321.988l-4.204 3.602a.563.563 0 00-.182.557l1.285 5.385a.562.562 0 01-.84.61l-4.725-2.885a.563.563 0 00-.586 0L6.982 20.54a.562.562 0 01-.84-.61l1.285-5.386a.562.562 0 00-.182-.557l-4.204-3.602a.563.563 0 01.321-.988l5.518-.442a.563.563 0 00.475-.345L11.48 3.5z" />
@@ -202,13 +202,13 @@ Courses
       </div>
       <br /><br />
     <div className='flex font-bold flex-col xl:flex-row text-[#696969] '>
-      <button className='bg-[#BBBBBB80] lg:mr-4  lg:mx-4 py-2 px-8 rounded-xl text-xl font-bold mt-3 '>About</button>
-      <button className='bg-[#BBBBBB80] xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl font-bold mt-3 '>Courses</button>
-      <button className='bg-[#BBBBBB80] xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl font-bold mt-3 '>Notes</button>
-      <button className='bg-[#BBBBBB80] xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl font-bold mt-3 '>Project</button>
-      <button className='bg-[#BBBBBB80] xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl font-bold mt-3 '>Podcast</button>
-      <button className='bg-[#49BBBD] text-white xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl font-bold mt-3 '>Book</button>
-      <button className='bg-[#BBBBBB80] xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl font-bold mt-3 '>Review</button>
+      <button className='bg-[#BBBBBB80] lg:mr-4  lg:mx-4 py-2 px-8 rounded-xl text-xl 2xl:text-2xl font-bold mt-3 '>About</button>
+      <button className='bg-[#BBBBBB80] xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl 2xl:text-2xl font-bold mt-3 '>Courses</button>
+      <button className='bg-[#BBBBBB80] xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl 2xl:text-2xl font-bold mt-3 '>Notes</button>
+      <button className='bg-[#BBBBBB80] xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl 2xl:text-2xl font-bold mt-3 '>Project</button>
+      <button className='bg-[#BBBBBB80] xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl 2xl:text-2xl font-bold mt-3 '>Podcast</button>
+      <button className='bg-[#49BBBD] text-white xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl 2xl:text-2xl font-bold mt-3 '>Book</button>
+      <button className='bg-[#BBBBBB80] xl:mx-4 py-2 px-8 lg:mx-4 rounded-xl text-xl 2xl:text-2xl font-bold mt-3 '>Review</button>
     </div>
 
 <br />

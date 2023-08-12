@@ -194,7 +194,7 @@ const CoursePage = () => {
           <div class="w-full bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
   <div class="bg-[#49BBBD] h-2.5 rounded-xl dark:bg-gray-300  w-[75%] " ></div>
 </div>
-<p className='float-right'>Lesson 5 of 7</p> 
+<p className='float-right text-[#696984] '>Lesson 5 of 7</p> 
         <div className="flex items-center justify-between">
          
           <div className="text-gray-600">
@@ -259,7 +259,7 @@ const CoursePage = () => {
                          </div><br />
                            <h1 className='font-bold text-2xl '>{val.title}</h1>
                          <br />
-                         <p className=''>{val.description}</p>
+                         <p className='text-[#696984] '>{val.description}</p>
                      
                      </div>
                         )

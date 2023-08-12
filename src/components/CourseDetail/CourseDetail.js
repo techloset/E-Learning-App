@@ -58,7 +58,7 @@ const CourseDetail = () => {
                             
 
 <div className='flex'>
-<div className="bg-white rounded-lg shadow-md p-8 h-[150px] ">
+<div className="bg-white rounded-lg shadow-md p-8 h-[150px]  ">
                                 <div className="font-bold text-lg opacity-50">4 out of 5 </div>
                              
 <div className="flex items-center my-3 ">
@@ -82,35 +82,36 @@ const CourseDetail = () => {
                         {/* <div class="w-[70%] ml-3 mt-2 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
   <div class="bg-[#49BBBD] h-2.5 rounded-xl dark:bg-gray-300  w-[75%] " ></div>
 </div>   */}
-                            </div>
+  </div>
+
 </div>
 <div className='w-[100%]  flex flex-col'>
  <div className='w-[100%] '>
-                                 <div class="w-[100%] mt-2 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-  <div class="bg-[#49BBBD] h-2.5 rounded-xl dark:bg-gray-300  w-[75%] " ></div>
+                                 <div class="w-[100%] mt-2 bg-gray-200 rounded-sm h-2.5 mb-4 ">
+  <div class="bg-[#49BBBD] h-2.5 rounded-sm dark:bg-gray-300  w-[75%] " ></div>
 </div>  
                             </div>
                             <div className='w-[100%] '>
-                                 <div class="w-[100%] mt-2 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-  <div class="bg-[#49BBBD] h-2.5 rounded-xl dark:bg-gray-300  w-[75%] " ></div>
-</div>  
-                            </div>
-
-                            <div className='w-[100%] '>
-                                 <div class="w-[100%] mt-2 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-  <div class="bg-[#49BBBD] h-2.5 rounded-xl dark:bg-gray-300  w-[75%] " ></div>
+                                 <div class="w-[100%] mt-2 bg-gray-200 rounded-sm h-2.5 mb-4 ">
+  <div class="bg-[#49BBBD] h-2.5 rounded-sm dark:bg-gray-300  w-[75%] " ></div>
 </div>  
                             </div>
 
                             <div className='w-[100%] '>
-                                 <div class="w-[100%] mt-2 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-  <div class="bg-[#49BBBD] h-2.5 rounded-xl dark:bg-gray-300  w-[75%] " ></div>
+                                 <div class="w-[100%] mt-2 bg-gray-200 rounded-sm h-2.5 mb-4 ">
+  <div class="bg-[#49BBBD] h-2.5 rounded-sm dark:bg-gray-300  w-[75%] " ></div>
 </div>  
                             </div>
 
                             <div className='w-[100%] '>
-                                 <div class="w-[100%] mt-2 bg-gray-200 rounded-full h-2.5 mb-4 dark:bg-gray-700">
-  <div class="bg-[#49BBBD] h-2.5 rounded-xl dark:bg-gray-300  w-[75%] " ></div>
+                                 <div class="w-[100%] mt-2 bg-gray-200 rounded-sm h-2.5 mb-4 ">
+  <div class="bg-[#49BBBD] h-2.5 rounded-sm dark:bg-gray-300  w-[75%] " ></div>
+</div>  
+                            </div>
+
+                            <div className='w-[100%] '>
+                                 <div class="w-[100%] mt-2 bg-gray-200 rounded-sm h-2.5 mb-4 ">
+  <div class="bg-[#49BBBD] h-2.5 rounded-sm dark:bg-gray-300  w-[75%] " ></div>
 </div>  
                             </div>
 </div>
@@ -152,17 +153,17 @@ const CourseDetail = () => {
 </div>
 
 <br />
+<p className='text-[#5B5B5B] '>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
 
-Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
-<br /><br />
-   <hr className='bg-gray-400 h-1'/>
+<br />
+   <hr className='bg-gray-400 h-[2px]'/>
 
 
 </div>
 
 
 
-<br /><br /><br />
+<br /><br />
 
 
 <div>
@@ -184,11 +185,10 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
     </div>   
 </div>
 
-<br />
 
-Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
-<br />
+<p className='text-[#5B5B5B] '>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
 
+<br />
 
 </div>
 
@@ -442,8 +442,7 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
          
 
 
-
-         <div className=' grid lg:grid-cols-2 mx-10 md:mx-20 gap-10 justify-between'>
+         <div className=' grid lg:grid-cols-2 gap-10 justify-between mx-10 md:mx-20'>
             <div className=" items-center   xl:mt-10">
 
             {/* <div className="relative flex items-center">
@@ -457,15 +456,20 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
 </div> */}
 
               
-              <div className='bg-[#33EFA0] text-2xl xl:text-4xl font-bold h-12 text-[#2F327D]  absolute transition  w-12   rounded-full '> Eve</div>
-<h1 className='text-[#2F327D] text-2xl xl:text-4xl font-bold '>Everything you can do in a physical <br />classroom, <span className='text-[#00CBB8]'> you can do with TOTC</span></h1>
+              <div className='bg-[#33EFA0] text-2xl xl:text-4xl font-bold h-12 text-[#2F327D]  absolute transition  w-12   rounded-full '> Ever</div>
+<h1 className='text-[#2F327D] text-2xl xl:text-4xl font-bold relative z-10'>Everything you can do in a physical classroom, <span className='text-[#00CBB8]'> you can do with TOTC</span></h1>
       
      
-      <p className='xl:text-lg w-4/5 mt-5'>
-      TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.{' '} <br />
-      {showMore ? (
+      <p className='xl:text-lg 2xl:w-3/4   w-11/12 text-[#696984]  mt-5'>
+      TOTC’s school management software helps traditional and online schools manage scheduling, attendance 
+      <div className='bg-[#33EFA0] text-2xl xl:text-4xl font-bold h-6 mx-28 right-0 lg:left-1/3  absolute transition  w-6  rounded-full '> </div>
+
+      
+      
+        , payments and virtual classrooms all in one secure cloud-based system.{' '} <br />
+        {showMore ? (
           <>
-            Suspendisse efficitur fringilla consequat. Maecenas condimentum dictum mauris, id sagittis lacus dapibus eu. Nam convallis diam sed nisi condimentum euismod. Phasellus vitae diam turpis. Mauris consequat gravida pharetra. Integer sollicitudin rutrum nisl id tempor.
+            Suspendisse efficitur fringilla consequat. Maecenas condimentum dictum mauris, id sagittis lacus dapibus eu. Nam convallis diam sed nisi condimentum euismod. Phasellus vitae diam turpis. Mauris consequat gravida pharetra. Integer sollicitudin  nisl id tempor.
             <button className=" float-left underline" onClick={handleToggleText}><br />
               Learn Less
             </button>
@@ -519,6 +523,50 @@ Class, launched less than a year ago by Blackboard co-founder Michael Chasen, in
 
     </div>
          </div>
+
+
+         {/* <div className=' grid lg:grid-cols-2 mx-10 md:mx-20 gap-10 justify-between'>
+            <div className=" items-center   xl:mt-10">
+
+           
+              
+              <div className='bg-[#33EFA0] text-2xl xl:text-4xl font-bold h-12 text-[#2F327D]  absolute transition  w-12   rounded-full '> Eve</div>
+<h1 className='text-[#2F327D] text-2xl xl:text-4xl font-bold '>Everything you can do in a physical <br />classroom, <span className='text-[#00CBB8]'> you can do with TOTC</span></h1>
+      
+     
+      <p className='xl:text-lg w-4/5 mt-5'>
+      TOTC’s school management software helps traditional and online schools manage scheduling, attendance, payments and virtual classrooms all in one secure cloud-based system.{' '} <br />
+      {showMore ? (
+          <>
+            Suspendisse efficitur fringilla consequat. Maecenas condimentum dictum mauris, id sagittis lacus dapibus eu. Nam convallis diam sed nisi condimentum euismod. Phasellus vitae diam turpis. Mauris consequat gravida pharetra. Integer sollicitudin rutrum nisl id tempor.
+            <button className=" float-left underline" onClick={handleToggleText}><br />
+              Learn Less
+            </button>
+          </>
+        ) : (
+          <button className=" underline" onClick={handleToggleText}><br />
+            Learn More
+          </button>
+        )}
+      </p>
+      <br />
+     
+    </div>
+
+<div className="relative  ">
+      
+      <div className=' '>
+      <img src={everything} alt="" />
+
+      </div>
+    
+
+
+
+
+
+    </div>
+         </div> */}
 
 
 

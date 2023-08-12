@@ -64,7 +64,7 @@ const CardsClicks = () => {
     
       const Card = ({ img }) => {
         return (
-          <div className="bg-white rounded-lg shadow-lg p-5">
+          <div className="bg-white  xl:h-[617px] rounded-lg shadow-lg p-5">
           {/* w-[335px] h-[239px] width and height of the image */}
           <img className=" w-full  h-[239px] rounded-xl" src={img} alt='myimageis here'  />
             <br />
@@ -84,12 +84,12 @@ const CardsClicks = () => {
                 <p className='ml-1 text-[#696984]'>3 Months</p>
                 </div>
                 </div>
-                <br />
-                <p className='font-bold text-xl '>AWS Certified solutions Architect</p>
-                <br />
-                <p className='text-[#696984]'>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
-            <br />
-         <div className='flex justify-between'>
+         
+                <p className='font-bold text-xl mt-5'>AWS Certified solutions Architect</p>
+        
+                <p className='text-[#696984] mt-8'>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+    
+         <div className='flex justify-between mt-8'>
             <div className='flex'>
                 <img src={icon} alt="ProfilePicture" className="w-10 h-10 rounded-full" />
                 <p className='ml-4 mt-1'>Lina</p> 

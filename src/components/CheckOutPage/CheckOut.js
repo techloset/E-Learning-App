@@ -121,7 +121,7 @@ const CheckOut = () => {
 
           <div className='flex justify-between mt-3 text-[#5B5B5B] font-semibold'> 
           <p>Coupon Discount</p>
-          <p>0%</p>
+          <p>0 %</p>
           </div>
 
           <hr className='bg-[#5B5B5B] h-[1.5px] mt-3' />
@@ -131,7 +131,7 @@ const CheckOut = () => {
           <p>5</p>
           </div>
         
-          <hr className='bg-[#5B5B5B] h-[1.5px] mt-3' />
+          <hr className='bg-[#5B5B5B] h-[2px] mt-3' />
         
           <div className='flex justify-between mt-3 font-semibold'> 
           <p>Total</p>

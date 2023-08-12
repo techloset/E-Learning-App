@@ -102,7 +102,7 @@ const Blog = () => {
                     <br />
                     <h1 className='font-semibold text-2xl md:text-3xl xl:text-4xl text-[#2F327D]'>Why Swift UI Should Be on the <br /> Radar of Every Mobile <br /> Developer</h1>
                     <br />
-                    <p className=' text-lg xl:text-xl'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempos Lorem ipsum dolor sitamet, <br /> consectetur adipiscing elit, sed do eiusmod tempor</p>
+                    <p className=' text-lg xl:text-xl text-[#696984] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br />sed do eiusmod tempos Lorem ipsum dolor sitamet, <br /> consectetur adipiscing elit, sed do eiusmod tempor</p>
                     <br />
                     <button className='bg-[#49BBBD] text-white rounded-2xl px-11 py-4 text-base font-bold'>Start learning now</button>
                 </div>

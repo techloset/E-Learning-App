@@ -8,7 +8,15 @@ const CourseCalender = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
   // const [currentDate, setCurrentDate] = useState(new Date());
   const [selectedDate, setSelectedDate] = useState(null);
-  const [selectedDay, setSelectedDay] = useState(null);
+  const [selectedDay, setSelectedDay] = useState(currentDate.getDate());
+
+  // const currentDate = new Date();
+
+const options = { weekday: 'short' };
+const dayOfWeek = currentDate.toLocaleString('en-US', options);
+
+  const daysOfWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const dayIndex = currentDate.getDay();
 
   const prevMonth = () => {
     setCurrentDate((prevDate) => {
@@ -84,7 +92,7 @@ const CourseCalender = () => {
         <div className=' p-6'>
             <p className='text-2xl  font-semibold'>Share and refer</p>
             <br />
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLorem <br />Lorem ipsum dolor sit amet, consectetur adipiscing</p>
+            <p className='text-[#696984] '>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmodadipiscing elit, sed do eiusmodeiusmodadipiscing elit, sed do eiusmodLorem <br />Lorem ipsum dolor sit amet, consectetur adipiscing</p>
             <br /><br />
 
 
@@ -121,33 +129,33 @@ const CourseCalender = () => {
         
         <div className='mx-auto text-center'>
   <h1 className="text-xl font-bold">
-    {selectedDate ? `${selectedDate} ${getMonthName(currentDate)}` : getMonthName(currentDate)}
+    {selectedDate ? `${selectedDate} ${getMonthName(currentDate)} ` : ` ${selectedDay} ${getMonthName(currentDate)} ${dayOfWeek}` }
   </h1>
 </div>
  
-       <div className='flex justify-between '>
+       <div className='flex justify-between text-[#696984] '>
         <p className='mr-4 font-semibold '>2PM</p>
         <hr className='border mt-3 bg-[#696984] w-full h-[0.3px] text-[#696984] ' />
        </div>
        <div className='bg-[#EE645B4D] px-5 py-4 xl:w-56 w-48 sm:text-base text-sm   md:w-3/4  mx-12 rounded-xl font-semibold text-[#EE645B]'>
         Adobe XD Live Class
        </div>
-       <div className='flex justify-between '>
+       <div className='flex justify-between text-[#696984]  '>
         <p className='mr-4 font-semibold '>3PM</p><br /><br />
         <hr className='border mt-3 bg-[#696984] w-full h-[0.3px] text-[#696984] ' />
        </div>
 
-       <div className='flex justify-between '>
+       <div className='flex justify-between text-[#696984] '>
         <p className='mr-4 font-semibold '>4PM</p><br /><br />
         <hr className='border mt-3 bg-[#696984] w-full h-[0.3px] text-[#696984] ' />
        </div>
 
-       <div className='flex justify-between '>
+       <div className='flex justify-between text-[#696984] '>
         <p className='mr-4 font-semibold '>5PM</p><br /><br />
         <hr className='border mt-3 bg-[#696984] w-full h-[0.3px] text-[#696984] ' />
        </div>
 
-       <div className='flex justify-between '>
+       <div className='flex justify-between text-[#696984] '>
         <p className='mr-4 font-semibold '>6PM</p>
         <hr className='border mt-3 bg-[#696984] w-full h-[0.3px] text-[#696984] ' />
        </div>

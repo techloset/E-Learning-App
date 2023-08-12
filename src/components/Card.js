@@ -46,9 +46,9 @@ const Card = () => {
 
       const Card = ({ img }) => {
         return (
-          <div className="bg-white rounded-lg shadow-lg p-5">
+          <div className="bg-white rounded-xl xl:h-[617px] shadow-lg p-6">
             {/* w-[335px] h-[239px] width and height of the image */}
-            <img className="  h-[239px]  w-full rounded-xl" src={img} alt='myimageis here'  />
+            <img className="  h-[238px]  w-full rounded-xl" src={img} alt='myimageis here'  />
               <br />
               <div className='flex justify-between'>
                   <div className='flex justify-between'>
@@ -66,12 +66,12 @@ const Card = () => {
                   <p className='ml-1 text-[#696984]'>3 Months</p>
                   </div>
                   </div>
-                  <br />
-                  <p className='font-bold text-xl '>AWS Certified solutions Architect</p>
-                  <br />
-                  <p className='text-[#696984]'>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
-              <br />
-           <div className='flex justify-between'>
+                  
+                  <p className='font-bold text-xl mt-5'>AWS Certified solutions Architect</p>
+                  
+                  <p className='text-[#696984] mt-8'>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+              
+           <div className='flex justify-between mt-8'>
               <div className='flex'>
                   <img src={icon} alt="ProfilePicture" className="w-10 h-10 rounded-full" />
                   <p className='ml-4 mt-1'>Lina</p> 

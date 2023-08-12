@@ -101,7 +101,7 @@ TOTC is a platform that allows educators to create online classes whereby they c
 
             <br />
 
-            <hr className='border-2 border-gray-500' />
+            <hr className='bg-[#696984] h-[1px] ' />
 
             <br />
 {/* <img src="../../images/card2.png" alt="" /> */}

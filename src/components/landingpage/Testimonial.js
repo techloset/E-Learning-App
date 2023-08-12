@@ -7,7 +7,7 @@ const Testimonial = () => {
   return (
     <div >
         <br /><br />
-        <div className='flex flex-col lg:flex-row mx-5 lg:mx-[0px]  2xl:mx-[50px] '>
+        <div className='flex flex-col xl:flex-row mx-5 lg:mx-[0px]  2xl:mx-[50px] '>
 
         
         {/* what they say */}
@@ -21,12 +21,12 @@ const Testimonial = () => {
             <p className='text-[#696984] text-[26px]'>TOTC has got more than 100k positive ratings from our users around the world. </p><br />
             <p className='text-[#696984] text-[26px]'>Some of the students and teachers were greatly helped by the Skilline.</p><br />
             <p className='text-[#696984] text-[26px]'>Are you too? Please give your assessment</p><br />
-            <button className='text-[#49BBBD] pl-3 sm:pl-9 md:text-[22px] lg:text-[20px] xl:text-[22px]  font-semibold xl:text-base 2xl:text-[22px] border-[#49BBBD]  rounded-full border '> Write your assessment <button className='rounded-full ml-6 border-[#49BBBD] px-4 xl:px-4 2xl:py-4 border'>&#8594;</button> </button>
+            <button className='text-[#49BBBD]  pl-3 sm:pl-9 md:text-[22px] lg:text-[20px] xl:text-[22px]  font-semibold xl:text-base 2xl:text-[22px] border-[#49BBBD]  rounded-full border '> Write your assessment <button className='rounded-full py-3 ml-6 border-[#49BBBD] px-4 xl:px-4 2xl:py-4 border'>&#8594;</button> </button>
         </div>
         {/* testimonial review */}
-        <div className='lg:mx-4  xl:mx-16  lg:w-1/2'>
+        <div className='lg:mx-4  xl:mx-14 2xl:mx-1  lg:w-1/2'>
             {/* arrow sign */}
-            <div className='z-20 mt-[22%]  lg:mr-0  xl:mr-40 2xl:mr-72  md:mr-[210px]  md:right-0  absolute'>
+            <div className='z-20 mt-[22%]  lg:left-0 xl:left-auto  xl:mr-40 2xl:mr-48  md:mr-[210px]  md:right-0  absolute'>
            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" className="absolute text-[#49BBBD] bg-white rounded-full shadow-xl w-12">
   <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
 </svg>     

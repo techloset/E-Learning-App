@@ -1,4 +1,4 @@
-import React,{useState} from 'react'
+import React,{useState,useEffect} from 'react'
 import myimg from "../../images/nav_girl.png"
 import news_big_picrure from "../../images/news_big_picrure.png"
 import apple from "../../images/apple.png"
@@ -8,11 +8,11 @@ import nav_girl from "../../images/nav_girl.png"
 
 const Card = ({ img,title, content }) => {
     return (
-      <div className="bg-white rounded-3xl  shadow-lg p-9">
+      <div className="bg-white rounded-3xl w-[324px] h-[375px] shadow-lg p-9">
         <img src={myimg} alt="" className='  w-[118px] h-[118px] bg-[#D9D9D9] justify-center mx-auto ' />
         <br />
         <h3 className="text-center text-xl font-semibold mb-2">{title}</h3>
-        <p className='justify-center text-base text-center'>{content}</p>
+        <p className='justify-center text-[#696984] text-base text-center'>{content}</p>
       </div>
     );
   };
@@ -54,7 +54,7 @@ const Accordion = ({question, answer}) => {
       </div>
       {isOpen && (
         <div className="p-4">
-          <p>{answer}</p>
+          <p className='text-[#696984] '>{answer}</p>
         </div>
       )}
     </div>
@@ -122,47 +122,89 @@ const Membership = () => {
 
 
 
-      const [startIndex, setStartIndex] = useState(0);
-  const [visibleCards, setVisibleCards] = useState(testimonials.slice(0, 4));
+  //     const [startIndex, setStartIndex] = useState(0);
+  // const [visibleCards, setVisibleCards] = useState(testimonials.slice(0, 4));
+
+  // const handleNext = () => {
+  //   if (startIndex + 4 < testimonials.length) {
+  //     setStartIndex(startIndex + 1);
+  //     setVisibleCards(testimonials.slice(startIndex + 1, startIndex + 5));
+  //   }
+  // };
+
+  // const handlePrev = () => {
+  //   if (startIndex > 0) {
+  //     setStartIndex(startIndex - 1);
+  //     setVisibleCards(testimonials.slice(startIndex - 1, startIndex + 3));
+  //   }
+  // };
+    
+  const [startIndex, setStartIndex] = useState(0);
+  const [visibleCards, setVisibleCards] = useState([]);
+
+  const updateVisibleCards = () => {
+    if (window.innerWidth >= 1500) {
+      setVisibleCards(testimonials.slice(startIndex, startIndex + 4));
+    } else if (window.innerWidth >= 1280)
+    {
+      setVisibleCards(testimonials.slice(startIndex, startIndex + 3));
+    }
+    else if (window.innerWidth >= 1024) {
+      setVisibleCards(testimonials.slice(startIndex, startIndex + 2));
+    }
+      else if (window.innerWidth >= 768) {
+      setVisibleCards(testimonials.slice(startIndex, startIndex + 2));
+    }
+    else {
+      setVisibleCards(testimonials.slice(startIndex, startIndex + 1));
+    }
+  };
+
+
+  useEffect(() => {
+    updateVisibleCards();
+    window.addEventListener('resize', updateVisibleCards);
+    return () => {
+      window.removeEventListener('resize', updateVisibleCards);
+    };
+  }, [startIndex]);
 
   const handleNext = () => {
-    if (startIndex + 4 < testimonials.length) {
+    if (startIndex + 1 < testimonials.length) {
       setStartIndex(startIndex + 1);
-      setVisibleCards(testimonials.slice(startIndex + 1, startIndex + 5));
     }
   };
 
   const handlePrev = () => {
     if (startIndex > 0) {
       setStartIndex(startIndex - 1);
-      setVisibleCards(testimonials.slice(startIndex - 1, startIndex + 3));
     }
   };
-    
-  
+
+
     const Questions=[
         {
             question:"Lorem ipsum dolor sit amet",
-            answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor"
+            answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor"
         },
         {
             question:"Consectetur adipiscing elit, sed do ",
-            answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor"
+            answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor"
         },{
             question:"Eiusmod tempos Lorem ipsum",
-            answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor"
+            answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor"
         },{
             question:"Lorem ipsum dolor sit amet",
-            answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor"
+            answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor"
         },{
             question:"Lorem ipsum dolor sit amet",
-            answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod temporLorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor"
+            answer:"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor , consectetur adipiscing elit, sed do eiusmod tempos Lorem ipsum dolor sitamet, consectetur adipiscing elit, sed do eiusmod tempor"
         },
     ]
   return (
     <div>
         <br /> <br />
-        <h1 className='text-center text-[#49BBBD] text-6xl font-extrabold '>Affordable pricing</h1>
+        <h1 className='text-center text-[#49BBBD] text-[64px]  font-extrabold '>Affordable pricing</h1>
         {/* ============================pricing tags=============================== */}
         <section className="bg-white  mx-8 md:mx-16 xl:mx-20 ">
   <div className="py-8 px-4 mx-auto  lg:py-16 lg:px-6">
@@ -304,19 +346,19 @@ const Membership = () => {
     {/* =====================================================================what our students have to say ================================================================================ */}
     <div className='bg-[#9DCCFF] bg-opacity-20 relative'>
         <br /> <br /> <br />
-        <div className='mx-10 lg:mx-16 xl:mx-20 '>
-            <h1 className='font-bold text-2xl'>What our students have to say</h1>
+        <div className='sm:mx-10 lg:mx-16 xl:mx-20  '>
+            <h1 className='mx-10 font-bold text-2xl'>What our students have to say</h1>
             <br /><br /><br />
             
    <div className="flex justify-between">
-   <div className="items-center relative ">
+   <div className="mx-auto justify-center relative ">
    <button
     className="absolute top-1/2  text-white left-0 transform -translate-y-1/2 -translate-x-1/2 p-2 w-10 h-10 bg-[#49BBBD] rounded-full"
     onClick={handlePrev}
   >
     &lt;
-  </button>
-  <div className="grid md:grid-cols-2  xl:grid-cols-4 gap-8">
+  </button>       
+  <div className="grid md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-12 xl:gap-14 2xl:grid-cols-4  2xl:gap-8">
     {visibleCards.map((testimonial) => (
       <Card
         key={testimonial.id}
@@ -367,13 +409,13 @@ const Membership = () => {
    
 <br />
 
-<div className='grid xl:grid-cols-2 mx-8 md:mx-16 xl:mx-20 gap-12'>
+<div className='grid xl:grid-cols-2 mx-8 md:mx-16  2xl:mx-20 gap-12'>
 <div className=''>
 <div className="card rounded-xl  bg-base-100 shadow-xl px-8 py-12">
   <img className='rounded-xl' src={news_big_picrure} alt="Shoes" />
   <div className="card-body"> <br /> 
     <h2 className="card-title font-bold text-xl ">Become a Teacher </h2> <br />
-    <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+    <p  className='text-[#696984]' >Class, launched less than a year ago by Blackboard co-founder <br/> Michael Chasen, integrates exclusively...</p>
     <div className="card-actions justify-end"> <br />
       <button className="btn btn-primary float-right bg-[#49BBBD] rounded-xl  text-white  px-6 py-2 " >Apply as a Teacher</button>
       <br /><br />
@@ -386,7 +428,7 @@ const Membership = () => {
   <img className='rounded-xl' src={news_big_picrure} alt="Shoes" />
   <div className="card-body"> <br /> 
     <h2 className="card-title font-bold text-xl ">Become a Customer </h2> <br />
-    <p>Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...</p>
+    <p className='text-[#696984]'>Class, launched less than a year ago by Blackboard co-founder <br /> Michael Chasen, integrates exclusively...</p>
     <div className="card-actions justify-end"> <br />
       <button className="btn btn-primary float-right bg-[#49BBBD] rounded-xl  text-white  px-6 py-2 " >Apply as a Customer</button>
       <br /><br />

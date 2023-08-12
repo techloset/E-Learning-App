@@ -52,7 +52,7 @@ const Latest = () => {
         <div>
     <div className="bg-white rounded-lg px-4 md:px-6 cursor-pointer md:flex" onClick={onClick}>
       <div className="mb-4 md:mb-0 md:mr-4 lg:mr-5 relative w-full md:w-[50%] xl:w-[100%] 2xl:w-[80%]">
-        <img src={image} alt="" className="w-full lg:w-[300px] xl:w-[400px] xl:h-[170px] 2xl:w-[450px]" />
+        <img src={image} alt="" className="w-full h-[250px] sm:h-[300px] md:w-[300px] md:h-[170px]     lg:w-[350px] lg:h-[200px] xl:w-[400px] xl:h-[170px] 2xl:w-[450px]" />
         <button className="absolute bottom-4 right-4 bg-[#49BBBD] rounded-full px-3 py-1 text-white">
           {buttonText}
         </button>
@@ -62,7 +62,7 @@ const Latest = () => {
         <p className="mb-1 font-semibold text-xl text-neutral-600 dark:text-neutral-200">
           {title}
         </p>
-        <p className="mb-2 text-lg text-neutral-600 dark:text-neutral-200">
+        <p className="mb-2 text-lg text-[#696984] dark:text-neutral-200">
           {description}
         </p>
       </div>
@@ -110,16 +110,16 @@ const Latest = () => {
             <div className=''>
                <p      className="mb-2 mt-4 text-2xl md:text-[26px] font-semibold sm:w-auto text-neutral-800 dark:text-neutral-50"> {card.title}</p>
 {isShowMore && (
-  <p className='text-xl  sm:w-auto text-neutral-600 dark:text-neutral-200'>
+  <p className='text-xl  sm:w-auto text-[#696984] dark:text-neutral-200'>
    Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...Class, launched less than a year ago by Blackboard co-founder Michael Chasen, integrates exclusively...
    </p>
 )}
 
              
-                <p className="mb-4 text-xl  sm:w-auto text-neutral-600 dark:text-neutral-200">{card.description}</p> 
+                <p className="mb-4 text-xl  sm:w-auto text-[#696984] dark:text-neutral-200">{card.description}</p> 
               
 
-<button onClick={toggleReadMoreLess} className='underline '>
+<button onClick={toggleReadMoreLess} className='underline text-[#696984] '>
   {isShowMore ? "Read Less" : "Read More"}
 </button>
 <br /><br /><br />
@@ -164,12 +164,14 @@ const Latest = () => {
 
                 )
                }}/>
-               
 
-      <Card
+
+
+
+                <Card
                 image={ui}
                 buttonText= 'NEWS'
-                title="Former Blackboard CEO Raises $16M to Bring LMS Features to Zoom Classrooms"
+                title="Former Blackboard CEO Raises $16M Bring LMS Features to Zoom Classrooms"
                 description="This year, investors have reaped big financial returns from betting... "
                onClick={()=>{
                 diplayCard(
@@ -180,6 +182,9 @@ const Latest = () => {
 
                 )
                }}/>
+               
+
+  
         </div>
 
     </div>

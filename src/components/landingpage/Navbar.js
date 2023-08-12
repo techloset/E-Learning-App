@@ -160,7 +160,7 @@ const Navbar = () => {
       <div className='px-4 sm:px-4 md:px-9  2xl:mt-16   '>
       <h1 className=' text-4xl xl:text-5xl 2xl:text-[54px] text-white font-bold'> <span className='text-orange-400'>Studying</span>  online is now much easier</h1>
       <br />
-      <p className='text-white w-3/4 text-xl xl:text-2xl font-sans font-normal'>TOTC is an interesting platform that will teach you in more an interactive way</p>
+      <p className='text-white xl:w-11/12 2xl:w-3/4 text-xl xl:text-2xl font-sans font-normal'>TOTC is an interesting platform that will teach you in more an interactive way</p>
       <br /><br />
       <div className="flex flex-col xl:flex-row text-center center ">
         

@@ -146,8 +146,8 @@ const Search = () => {
 {/* options */}
     <div className="flex w-3/4 flex-col 2xl:text-2xl lg:flex-row justify-between mt-4 md:mt-0 ">
       
-    <div className="relative  mx-1">
-          <select
+    <div className="relative">
+          {/* <select
             value={selectedSubject}
             onChange={(e) => handleSubjectChange(e.target.value)}
           
@@ -161,10 +161,75 @@ const Search = () => {
                 {subject}
               </option>
             ))}
-          </select>
-        </div>
+          </select> */}
 
-      <div className="relative mx-1">
+
+<div className="relative">
+  <select
+    value={selectedSubject}
+    onChange={(e) => handleSubjectChange(e.target.value)}
+    className="block text-center font-semibold w-full py-2 pl-4 pr-12 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 appearance-none"
+  >
+    <option value="" className="">
+      Subject
+    </option>
+    {subjectOptions.map((subject, index) => (
+      <option key={index} value={subject}>
+        {subject}
+      </option>
+    ))}
+  </select>
+  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+    <svg
+      className="h-5 w-5 "
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="5"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </div>
+</div>
+</div>
+
+
+
+
+
+<div className="relative">
+  <select
+    value={selectedPartner}
+    onChange={(e) => handleCourseChange(e.target.value)}
+    className="block text-center font-semibold w-full py-2 pl-4 pr-12 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 appearance-none"
+  >
+    <option value="" className="">
+      Partner
+    </option>
+    {partnerOptions.map((partner, index) => (
+      <option key={index} value={partner}>
+        {partner}
+      </option>
+    ))}
+  </select>
+  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+    <svg
+      className="h-5 w-5 "
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="5"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </div>
+</div>
+
+      {/* <div className="relative mx-1">
         <select
           value={selectedPartner}
           onChange={(e) => handleCourseChange(e.target.value)}
@@ -179,13 +244,17 @@ const Search = () => {
             </option>
           ))}
         </select>
-      </div>
+      </div> */}
 
-      <div className="relative mx-1">
+
+
+
+
+      {/* <div className="relative mx-1">
         <select
           value={selectedProgram}
           onChange={(e) => handleFunctionChange(e.target.value)}
-          className="block font-semibold w-full py-2 px-4 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 "
+          className="block font-semibold w-full py-2 px-4 border  border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 "
         >
           <option value="" disabled>
             Program
@@ -196,9 +265,39 @@ const Search = () => {
             </option>
           ))}
         </select>
-      </div>
+      </div> */}
 
-      <div className="relative mx-1">
+      <div className="relative">
+  <select
+    value={selectedProgram}
+    onChange={(e) => handleFunctionChange(e.target.value)}
+    className="block text-center font-semibold w-full py-2 pl-4 pr-12 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 appearance-none"
+  >
+    <option value="" className="">
+      Program
+    </option>
+    {programOptions.map((program, index) => (
+      <option key={index} value={program}>
+        {program}
+      </option>
+    ))}
+  </select>
+  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+    <svg
+      className="h-5 w-5 "
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="5"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </div>
+</div>
+
+      {/* <div className="relative mx-1">
         <select
           value={selectedLanguage}
           onChange={(e) => handleClassChange(e.target.value)}
@@ -213,9 +312,39 @@ const Search = () => {
             </option>
           ))}
         </select>
-      </div>
+      </div> */}
 
-      <div className="relative mx-1">
+<div className="relative">
+  <select
+    value={selectedLanguage }
+    onChange={(e) => handleClassChange(e.target.value)}
+    className="block text-center font-semibold w-full py-2 pl-4 pr-12 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 appearance-none"
+  >
+    <option value="" className="">
+      Language
+    </option>
+    {languageOptions.map((language, index) => (
+      <option key={index} value={language}>
+        {language}
+      </option>
+    ))}
+  </select>
+  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+    <svg
+      className="h-5 w-5 "
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="5"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </div>
+</div>
+
+      {/* <div className="relative mx-1">
         <select
           value={selectedAvailability}
           onChange={(e) => handleAvailChange(e.target.value)}
@@ -230,9 +359,39 @@ const Search = () => {
             </option>
           ))}
         </select>
-      </div>
+      </div> */}
 
-      <div className="relative mx-1 ">
+<div className="relative">
+  <select
+    value={selectedAvailability}
+    onChange={(e) => handleAvailChange(e.target.value)}
+    className="block text-center font-semibold w-full py-2 pl-4 pr-12 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 appearance-none"
+  >
+    <option value="" className="">
+      Availability
+    </option>
+    {availabilityOptions.map((availability, index) => (
+      <option key={index} value={availability}>
+        {availability}
+      </option>
+    ))}
+  </select>
+  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+    <svg
+      className="h-5 w-5 "
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="5"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </div>
+</div>
+
+      {/* <div className="relative mx-1 ">
         <select
           value={selectedLearning}
           onChange={(e) => handleLearning(e.target.value)}
@@ -247,7 +406,40 @@ const Search = () => {
             </option>
           ))}
         </select>
-      </div>
+      </div> */}
+
+
+<div className="relative">
+  <select
+    value={selectedLearning}
+    onChange={(e) => handleLearning(e.target.value)}
+    className="block text-center font-semibold w-full py-2 pl-4 pr-12 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500 appearance-none"
+  >
+    <option value="" className="">
+      Learning Type
+    </option>
+    {learningOptions.map((learning, index) => (
+      <option key={index} value={learning}>
+        {learning}
+      </option>
+    ))}
+  </select>
+  <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+    <svg
+      className="h-5 w-5 "
+      fill="none"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="5"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+    >
+      <path d="M19 9l-7 7-7-7"></path>
+    </svg>
+  </div>
+</div>
+
+
     </div>
     
 
@@ -320,12 +512,12 @@ const Search = () => {
 <br /><br /><br /><br /><br /><br />
 
 
-<div className='grid 2xl:grid-cols-3 md:grid-cols-2  gap-y-36  gap-x-6  mx-8 lg:mx-28'>
+<div className='grid 2xl:grid-cols-3 md:grid-cols-2  gap-y-36  gap-x-6  mx-8 lg:mx-20'>
     {creators.map((card)=>{
       return(
-        <div class="relative max-w-md mx-auto h-[300px] lg:w-[400px] xl:w-[400px] md:w-[350px] w-[300px] ">
+        <div class="shadow-2xl relative max-w-md mx-auto h-[300px] lg:w-[400px] xl:w-[430px] sm:w-[450px] w-[300px] ">
 
-<div class="bg-white rounded-lg shadow-md p-6">
+<div class="bg-white shadow-inner py-5 px-6">
   <br /><br /><br /><br /><br />
   <h2 class="text-xl text-center font-semibold mb-4">{card.name}</h2>
   <p className='text-center text-[#696984] '>{card.profession}</p>
@@ -354,9 +546,9 @@ const Search = () => {
       <div className='lg:w-1/2'>
         <p className='lg:text-3xl font-bold'>Savannah Nguyen</p><br />
         <p className='lg:text-2xl '>tanya.hill@example.com</p><br />
-        <p className='text-[#696984] text-[18px] '>Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor <br />
-Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor <br />
-Lorem ipsum dolor sit amet, consectetur adipising elit, sed do eiusmod tempor</p>
+        <p className='text-[#696984] text-[18px] '>Lorem ipsum dolor sit amet, consectetur adipising elit, <br/> sed do eiusmod tempor <br />
+Lorem ipsum dolor sit amet, consectetur adipising elit, <br />  sed do eiusmod tempor <br />
+Lorem ipsum dolor sit amet, consectetur adipising elit, <br /> sed do eiusmod tempor</p>
 <br />
 <div className='flex'>
 <button
